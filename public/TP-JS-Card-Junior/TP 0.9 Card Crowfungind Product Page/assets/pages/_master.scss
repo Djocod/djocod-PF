@@ -1,0 +1,114 @@
+.master {
+  // -------------- Logo-Master --------------
+  .logo-m {
+    transform: translateY(-50%);
+    border: 2px solid var(--Moderatecyan);
+    border-radius: 100px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--Darkgray);
+    line-height: 3em;
+  }
+  .btn-container {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-back {
+    width: 30%;
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    background: hsl(176, 72%, 28%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+  }
+  .btn-back:hover {
+    box-shadow: 4px -4px 0px 0px hsl(176, 50%, 47%);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+  }
+
+  .btn-book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: hsl(176, 72%, 28%);
+    background: hsla(176, 50%, 47%, 0.1);
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+    .logo-book path {
+      fill: hsl(0, 0%, 100%);
+      transition: 0.5s ease-in-out;
+    }
+    .logo-book circle {
+      fill: hsl(176, 72%, 28%);
+      transition: 0.5s ease-in-out;
+    }
+    span {
+      padding: 0px 20px;
+    }
+    span:nth-child(3) {
+      display: none;
+    }
+  }
+  .hide.btn-book {
+    color: hsl(0, 0%, 48%);
+    background: hsl(0, 0%, 48%, 0.1);
+    .logo-book path {
+      fill: white;
+    }
+    .logo-book circle {
+      fill: hsl(0, 0%, 48%);
+    }
+  }
+  .hide {
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(3) {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 20px;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      padding: 15px 0px;
+    }
+    .btn-container {
+      padding: 0px;
+    }
+    .btn-book > span {
+      display: none;
+    }
+    .hide {
+      span:nth-child(2),
+      span:nth-child(3) {
+        display: none;
+      }
+    }
+    .btn-back {
+      width: 70%;
+      font-size: 0.9rem;
+    }
+  }
+}

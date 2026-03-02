@@ -1,0 +1,62 @@
+.turn-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 930px;
+  background: hsl(200, 60%, 99%);
+  margin: 0 auto 10px;
+  border-radius: 15px;
+  border: 1px solid hsl(217, 61%, 90%);
+  box-shadow: 0px 2px 0px 0px hsl(217, 61%, 90%);
+  .img-logo {
+    padding: 10px;
+    height: 3.2rem;
+  }
+  .light-container {
+    background: hsl(0, 0%, 93%);
+    padding: 10px;
+    margin: 7px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    .btn-moon {
+      display: block;
+      background: no-repeat url(../images/icon-moon.svg) center/cover;
+      height: 20px;
+      width: 20px;
+      border: 0;
+      transition: 0.5s ease-in-out;
+      .bg2-moon {
+        background: hsl(225, 23%, 24%);
+      }
+    }
+    &:hover {
+      border: 1px solid hsl(3, 77%, 44%);
+      transition: 0.2s ease-in-out;
+      border-radius: 10px;
+    }
+    .sun {
+      display: block;
+      background: no-repeat url(../images/icon-sun.svg) center/cover;
+      height: 20px;
+      width: 20px;
+      border: 0;
+      transition: 0.5s ease-in-out;
+    }
+  }
+  .bg-moon {
+    background: hsl(226, 11%, 37%);
+    &:hover {
+      transition: 0.2s ease-in-out;
+      border: 1px solid hsl(3, 77%, 44%);
+      background: hsl(226, 11%, 37%);
+      border-radius: 10px;
+    }
+  }
+}
+
+.turn-light-dark {
+  background: hsl(225, 23%, 24%);
+  border: 1px solid hsl(226, 11%, 37%);
+  box-shadow: none;
+}

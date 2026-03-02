@@ -1,0 +1,64 @@
+// header,
+// main,
+// .modal-start {
+//   display: none;
+// }\
+
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+// - Weights: 400, 500, 700
+:root {
+  // ### Primary
+  --Moderatecyan: hsl(176, 50%, 47%);
+  --Darkcyan: hsl(176, 72%, 28%);
+  // ### Neutral
+  --Black: hsl(0, 0%, 0%);
+  --Darkgray: hsl(0, 0%, 48%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+body {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 16px;
+  background: rgb(251, 253, 255);
+  transition: 0.8 ease-in-out;
+  &.transitionBody::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+  }
+}
+main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(-7%);
+  transition: 0.8s ease-in-out;
+  @media screen and (max-width: 1380px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 865px) {
+    width: 95%;
+  }
+}
+section {
+  border-radius: 7px;
+  background: white;
+  margin: 20px 0;
+  border: 1px solid hsl(0, 0%, 48%, 0.1);
+  transition: all 0.6s ease-in-out;
+  // transition: opacity 0.2s, transform 0.8s cubic-bezier(0.09, 0.52, 0.25, 1);
+}
+section:hover {
+  box-shadow: 8px 10px 8px 0px hsl(176, 72%, 28%, 0.1);
+}

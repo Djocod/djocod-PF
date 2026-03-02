@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  /* ### Primary */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Verylightgrayishblue: hsl(210, 60%, 98%);
+  --Lightgrayishblue1: hsl(211, 68%, 94%);
+  --Lightgrayishblue2: hsl(205, 33%, 90%);
+  --Grayishblue: hsl(219, 14%, 63%);
+  --Darkgrayishblue: hsl(219, 12%, 42%);
+  --Verydarkblue: hsl(224, 21%, 14%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 1440px;
+  display: grid;
+  place-items: center;
+}
+main {
+  font-size: 16px;
+  background: var(--White);
+  width: 40%;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px var(--Grayishblue);
+}
+/* ----- Header -----*/
+.notif {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 20px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title > h1 {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.title > p {
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  border-radius: 5px;
+  background: var(--Blue);
+  color: var(--White);
+  font-weight: 500;
+  margin: 0 10px;
+}
+/* ----- Title Rate -----*/
+#mark {
+  color: var(--Darkgrayishblue);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#mark:hover {
+  color: var(--Blue);
+}
+/* ----- Text Left -----*/
+#received {
+  position: relative;
+  display: flex;
+  align-items: start;
+  color: var(--Grayishblue);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#received > img {
+  width: 35px;
+  margin-right: 10px;
+}
+#received > img:nth-child(3) {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.not-read {
+  background: var(--Lightgrayishblue1);
+}
+.read {
+  background: var(--White);
+}
+.name {
+  color: var(--Verydarkblue);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.name:hover {
+  color: var(--Blue);
+}
+.not-read p:after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  margin: 2px;
+  background: red;
+  border-radius: 50px;
+}
+.link {
+  text-transform: none;
+  text-decoration: none;
+  color: var(--Blue);
+  font-weight: 800;
+}
+.date {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+/* ----- Text Right-----*/
+.send {
+  display: grid;
+  place-items: end;
+  margin-bottom: 10px;
+}
+.send > P {
+  width: 90%;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--Darkgrayishblue);
+  border: 1px solid var(--Grayishblue);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.send > P:hover {
+  background: var(--Lightgrayishblue2);
+  border: 1px solid var(--White);
+}
+@media screen and (max-width: 1010px) {
+  main {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    height: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .title > h1 {
+    font-size: 1.2rem;
+  }
+  #mark {
+    font-size: 0.9rem;
+  }
+  #received {
+    font-size: 1rem;
+  }
+  #received > img {
+    width: 45px;
+    margin-right: 10px;
+  }
+  #received > img:nth-child(3) {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+  .not-read p:after {
+    height: 7px;
+    width: 7px;
+  }
+  .send > P {
+    width: 83%;
+    font-size: 1rem;
+  }
+}

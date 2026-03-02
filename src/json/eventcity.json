@@ -1,0 +1,98 @@
+{
+  "projet": {
+    "theme": "Application de recherche d'événements musicaux",
+    "tasks": [
+      {
+        "id": 1,
+        "titre": "Idéation et définition du concept",
+        "description": "Phase de brainstorming réalisée avec trois membres de classe pour explorer des thématiques et développer une application orientée vers la musique.",
+        "objectif": "Concevoir une application capable de rechercher les événements musicaux d'un artiste donné à proximité de l'utilisateur.",
+        "apports": [
+          "Définir une problématique claire",
+          "Identifier la cible utilisateur",
+          "Formaliser une vision commune du produit"
+        ],
+        "progression": "Point de départ structuré du projet"
+      },
+      {
+        "id": 2,
+        "titre": "Organisation et gestion de projet",
+        "description": "Définition des rôles après validation du concept. Occupation du poste de chef de projet.",
+        "responsabilites": [
+          "Coordination de l'équipe",
+          "Suivi de l'avancement",
+          "Gestion du dépôt GitHub",
+          "Supervision du versionnement et des contributions"
+        ],
+        "methodes": "Utilisation de branches Git adaptées et contrôle de l'intégration des modifications pour garantir le travail sur la bonne version.",
+        "competences_developpees": [
+          "Gestion de version (Git)",
+          "Organisation du travail collaboratif",
+          "Anticipation des conflits techniques"
+        ]
+      },
+      {
+        "id": 3,
+        "titre": "Répartition technique et conception visuelle",
+        "description": "Division de l'équipe en deux pôles : design/UX et gestion des données.",
+        "poles": [
+          "Équipe orientée design et expérience utilisateur (UI/UX)",
+          "Équipe en charge de la gestion et du traitement des données"
+        ],
+        "travaux_realises": [
+          "Conception d'un wireframe pour structurer l'interface",
+          "Définition des parcours utilisateurs",
+          "Organisation des composants (landing page, formulaire de recherche, affichage des événements)",
+          "Choix de la palette de couleurs et de la hiérarchie visuelle"
+        ],
+        "progression": "Transformation de l'idée initiale en une interface cohérente et fonctionnelle"
+      },
+      {
+        "id": 4,
+        "titre": "Architecture front-end et structuration SCSS",
+        "description": "Proposition et mise en place de SCSS pour optimiser la maintenabilité du code.",
+        "objectifs_scss": [
+          "Éviter la répétition de styles",
+          "Structurer le code CSS de manière modulaire",
+          "Centraliser les variables (couleurs, tailles, espacements)",
+          "Définir des règles globales pour garantir la cohérence visuelle"
+        ],
+        "architecture_mise_en_place": [
+          "Séparation des composants",
+          "Structuration des balises HTML",
+          "Paramétrage des styles par blocs fonctionnels"
+        ],
+        "progression": "Renforcement de la qualité et de la scalabilité du projet"
+      },
+      {
+        "id": 5,
+        "titre": "Dynamisation de l'interface",
+        "description": "Ajout d'interactivité à l'application malgré un rôle principalement orienté design.",
+        "integrations": [
+          "Animations et transitions en CSS",
+          "Événements JavaScript pour gérer les interactions utilisateur",
+          "Comportements dynamiques liés aux recherches et à l'affichage des résultats"
+        ],
+        "progression": "Ajout d'une dimension immersive et fonctionnelle améliorant l'expérience utilisateur"
+      },
+      {
+        "id": 6,
+        "titre": "Conclusion et progression personnelle",
+        "description": "Bilan global du projet et des compétences acquises.",
+        "competences_cles": [
+          "Gestion d'équipe et coordination",
+          "Prise de décision technique",
+          "Structuration d'une architecture front-end",
+          "Gestion du versionnement avec GitHub",
+          "Écoute et adaptation aux besoins des collaborateurs"
+        ],
+        "lecons_apprises": [
+          "Maintenir une communication claire",
+          "Respecter les attentes de chacun",
+          "Concilier vision personnelle et travail collaboratif"
+        ],
+        "perspectives": "Consolidation de l'intérêt pour des rôles combinant architecture technique et gestion de projet, tout en renforçant les compétences en développement front-end"
+      }
+    ]
+  }
+}

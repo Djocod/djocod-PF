@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  /* ### Primary */
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+  /* ### Neutral */
+  --Offwhite: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --Darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--Offwhite);
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+/* ----- Main ----- */
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 5% 60% 20%;
+  gap: 5% 2%;
+  grid-template-areas:
+    "nav nav nav "
+    "sec1 sec1 sec2"
+    "game-a game-b game-c";
+}
+/* ----- Nav Bar----- */
+nav {
+  grid-area: nav;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-bar > span {
+  display: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style: none;
+  padding: 0px 30px;
+  color: var(--Darkgrayishblue);
+  transition: all 0.3s ease-in-out;
+}
+li:hover,
+li > a:hover {
+  color: var(--Softred);
+  cursor: pointer;
+}
+li > a {
+  text-decoration: none;
+}
+/* ----- section 1----- */
+.part-1-container {
+  grid-area: sec1;
+  display: grid;
+  grid-template-columns: 49.5% 49.5%;
+  grid-template-rows: 60% 35%;
+  gap: 5% 1%;
+  grid-template-areas:
+    "bg bg"
+    "title text";
+}
+.bg-img {
+  grid-area: bg;
+  background: url(./assets/images/image-web-3-desktop.jpg) center/cover
+    no-repeat;
+  background-size: 100% 100%;
+}
+.title-container {
+  grid-area: title;
+  width: 80%;
+}
+.title-container > h1 {
+  font-size: 3.5rem;
+  color: var(--Verydarkblue);
+}
+.text-container {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.text-container > p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--Darkgrayishblue);
+}
+.text-container > button {
+  background: var(--Softred);
+  padding: 15px 20px;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 700;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.text-container > button:hover {
+  background: var(--Verydarkblue);
+  color: var(--Offwhite);
+  cursor: pointer;
+}
+/* ----- Section 2----- */
+.part-2-container {
+  grid-area: sec2;
+  padding: 20px;
+  background: var(--Verydarkblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.part-2-container > h2 {
+  color: var(--Softorange);
+  font-size: 2.5rem;
+}
+.new-container {
+  color: var(--Offwhite);
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--Grayishblue);
+}
+.new-container:nth-child(4) {
+  border: none;
+}
+.new-container > h3 {
+  font-size: 1.5rem;
+  padding: 10px 0px;
+  transition: all 0.3s ease-in;
+}
+.new-container > h3:hover {
+  color: var(--Softorange);
+  cursor: pointer;
+}
+.new-container > p {
+  color: var(--Grayishblue);
+  font-size: 1.2rem;
+}
+/* ----- Section 3----- */
+/* .part-3-container {
+    grid-area: game;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    } */
+.game-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 55%;
+  gap: 5%;
+}
+.game-1 {
+  grid-area: game-a;
+}
+.img-game1 {
+  background: url(./assets/images/image-retro-pcs.jpg) center/cover no-repeat;
+}
+.game-2 {
+  grid-area: game-b;
+}
+.img-game2 {
+  background: url(./assets/images/image-top-laptops.jpg) center/cover no-repeat;
+}
+.game-3 {
+  grid-area: game-c;
+}
+.img-game3 {
+  background: url(./assets/images/image-gaming-growth.jpg) center/cover
+    no-repeat;
+}
+
+/* ----- Section 3 settings----- */
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.game > h3 {
+  font-size: 2.5rem;
+  color: var(--Softred);
+}
+.game > h4 {
+  font-size: 1.2rem;
+  /* padding: 15px 0px; */
+  color: var(--Verydarkblue);
+  transition: all 0.3s ease-in;
+}
+.game > h4:hover {
+  color: var(--Softred);
+  cursor: pointer;
+}
+.game > p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding-right: 5px;
+  color: var(--Grayishblue);
+}
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 80px 20px;
+    height: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /* nav {
+    position: relative;
+  } */
+  #side-bar {
+    position: absolute;
+    display: none;
+    width: 250px;
+    top: 130px;
+    right: -250px;
+    z-index: 0;
+    background: var(--Offwhite);
+    border: 1px solid var(--Softorange);
+    transition: all 0.5s ease-out;
+  }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 20px;
+  }
+  li {
+    padding: 20px;
+  }
+  .toggle-btn span {
+    display: block;
+    background: var(--Verydarkblue);
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+    transition: 0.3s ease;
+    z-index: 10;
+  }
+  #side-bar.active {
+    display: block;
+    right: 0;
+  }
+  .active > span:nth-child(1) {
+    transform: rotate(45deg) translateY(150%);
+  }
+  .active span:nth-child(2) {
+    display: none;
+  }
+  .active > span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-150%);
+  }
+  .part-1-container {
+    grid-area: sec1;
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "bg "
+      "title "
+      "text";
+  }
+  .bg-img {
+    background: url(./assets/images/image-web-3-mobile.jpg) center/cover
+      no-repeat;
+  }
+  .title-container {
+    width: 100%;
+  }
+  .title-container > h1 {
+    font-size: 2.5rem;
+  }
+  .text-container > p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    padding-bottom: 20px;
+  }
+  .part-2-container {
+    margin: 30px auto;
+  }
+  .new-container > h3 {
+    font-size: 1.2rem;
+  }
+  .new-container > p {
+    font-size: 0.9rem;
+  }
+  .game-container {
+    grid-template-columns: 25% 65%;
+    margin: 10px auto;
+  }
+  .game > h3 {
+    font-size: 2rem;
+  }
+  .game > h4 {
+    font-size: 1rem;
+  }
+  .game > p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}

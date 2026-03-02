@@ -1,0 +1,37 @@
+[
+  {
+    "img": "css",
+    "href": "./img/icons8-css.svg",
+    "id": "2f01"
+  },
+  {
+    "img": "html",
+    "href": "./img/icons8-html.svg",
+    "id": "b74a"
+  },
+  {
+    "img": "js",
+    "href": "./img/icons8-js-50.svg",
+    "id": "87d9"
+  },
+  {
+    "img": "node",
+    "href": "./img/icons8-nœud-js.svg",
+    "id": "f154"
+  },
+  {
+    "img": "python",
+    "href": "./img/icons8-python-50.svg",
+    "id": "5169"
+  },
+  {
+    "img": "react",
+    "href": "./img/icons8-react-native.svg",
+    "id": "1ea5"
+  },
+  {
+    "img": "redux",
+    "href": "./img/icons8-redux.svg",
+    "id": "feda"
+  }
+]

@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "NotoItalic";
+  src: url(../fonts/NotoSans-Italic-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: "NotoVariable", sans-serif;
+  src: url(../fonts/NotoSans-VariableFont_wdth\wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "NotoVariable", sans-serif;
+
+  html {
+    height: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  body {
+    background: no-repeat linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%)
+      center/cover;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 10px auto;
+  }
+  .moon {
+    background: no-repeat linear-gradient(180deg, #040918 0%, #091540 100%)
+      center/cover;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+}
+// .turn-light {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 67%;
+//   background: hsl(200, 60%, 99%);
+//   margin: 10px auto;
+//   border-radius: 15px;
+//   border: 1px solid hsl(217, 61%, 90%);
+//   box-shadow: 0px 2px 0px 0px hsl(217, 61%, 90%);
+// }
+// .bg2-moon {
+//   background: hsl(225, 23%, 24%);
+// }
+// .img-logo {
+//   padding: 10px;
+//   height: 3.2rem;
+// }
+// /* -------light-------*/
+// .light-container {
+//   background: hsl(0, 0%, 78%);
+//   padding: 10px;
+//   border-radius: 15px;
+// }
+// .bg-moon {
+//   background: hsl(226, 11%, 37%);
+//   padding: 10px;
+//   border-radius: 15px;
+// }
+
+// .moon {
+//   background: no-repeat linear-gradient(180deg, #040918 0%, #091540 100%)
+//     center/cover;
+//   color: white;
+//   transition: 0.5s ease-in-out;
+// }
+// /* -------light-------*/
+// .btn-sun {
+//   display: none;
+//   /* visibility: hidden; */
+// }
+// .btn-moon {
+//   display: block;
+//   background: no-repeat url(./assets/images/icon-moon.svg) center/cover;
+//   height: 20px;
+//   width: 20px;
+//   border: 0;
+//   transition: 0.5s ease-in-out;
+// }
+// .sun {
+//   display: block;
+//   background: no-repeat url(./assets/images/icon-sun.svg) center/cover;
+//   height: 20px;
+//   width: 20px;
+//   border: 0;
+//   transition: 0.5s ease-in-out;
+// }
+// .visual-container {
+//   width: 67%;
+//   margin: 0 auto;
+// }
+// .exten-container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: 0 auto;
+//   width: 100%;
+// }
+// .exten-container h1 {
+//   padding: 0;
+//   margin: 0;
+// }
+// .list-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   list-style: none;
+//   text-decoration: none;
+// }
+// .list-container li {
+//   padding: 5px 15px;
+//   margin: 10px;
+//   background: gray;
+//   border-radius: 50px;
+//   border: 1px solid red;
+// }
+
+// .container-card {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+//   width: 100%;
+// }
+// .card {
+//   height: 200px;
+//   width: 300px;
+//   padding: 20px;
+//   margin: 10px;
+//   border-radius: 8px;
+//   background: hsl(200, 60%, 99%);
+//   border: 1px solid hsl(217, 61%, 90%);
+//   box-shadow: 0px 2px 0px 0px hsl(217, 61%, 90%);
+// }
+// .head {
+//   display: flex;
+// }
+// .button-head {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+// .remove-btn {
+//   background: transparent;
+//   border: 1px solid hsl(226, 25%, 17%);
+//   padding: 5px 15px;
+//   border-radius: 50px;
+// }
+// /* The switch - the box around the slider */
+// label {
+//   font-size: 17px;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 14%;
+//   height: 100%;
+// }
+
+// /* Hide default HTML checkbox */
+// input {
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// }
+
+// /* The slider */
+// .slider {
+//   position: absolute;
+//   cursor: pointer;
+//   inset: 0;
+//   width: 40px;
+//   height: 20px;
+//   border: 1px solid hsl(226, 11%, 37%);
+//   background: hsl(0, 0%, 78%);
+//   border-radius: 50px;
+//   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+// }
+
+// .slider:before {
+//   position: absolute;
+//   content: "";
+//   width: 20px;
+//   height: 20px;
+//   inset: 0;
+//   background-color: white;
+//   border-radius: 50px;
+//   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+// }
+
+// input:checked + .slider {
+//   background: hsl(3, 86%, 64%);
+// }
+
+// input:checked + .slider:before {
+//   transform: translateX(100%);
+// }

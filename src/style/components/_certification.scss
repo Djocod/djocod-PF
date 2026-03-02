@@ -1,0 +1,118 @@
+.certif {
+  position: relative;
+  margin: 50px auto;
+  width: 100%;
+  background: $black-300;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.8s ease-in-out;
+
+  .animation-span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: $green-300;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 0;
+    span {
+      z-index: 2;
+      display: block;
+      height: 40px;
+      width: 2%;
+      background: $black-300;
+      transform: rotate(35deg) translateY(-45%);
+    }
+    .back {
+      position: absolute;
+      z-index: 1;
+      width: 150px;
+      height: 100%;
+      background: $black-300;
+      box-shadow: 0px 0px 16px 20px $black-300;
+      border: 1px solid $green-300;
+      border-radius: 50px;
+      animation: switch 7s linear infinite;
+    }
+  }
+  @keyframes switch {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(1000%);
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #d4e0d9;
+    font-family: "Space Grotesk", sans-serif;
+    margin-bottom: 20px;
+    .fa-hexagon {
+      color: $green-300;
+      font-size: 1.8rem;
+      animation: rotate 5s linear infinite;
+    }
+  }
+  .certification {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: $black-200;
+    padding: 10px;
+    border-radius: 8px;
+    p {
+      flex: 1 1 33.33%;
+      padding: 20px;
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $black-700;
+      line-height: 1.4;
+      letter-spacing: 0.04em;
+      a {
+        display: inline-block;
+        padding: 0px;
+        color: $green-200;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $green-100;
+        }
+      }
+      &:nth-child(2) {
+        border-left: 1px solid $green-100;
+        border-right: 1px solid $green-100;
+      }
+    }
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+
+    &:hover {
+      border-color: $green-300;
+      box-shadow: 0 0 0 1px $green-300;
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .certif {
+    .certification {
+      flex-direction: column;
+      p {
+        &:nth-child(2) {
+          border-left: none;
+          border-right: none;
+          border-top: 1px solid $green-100;
+          border-bottom: 1px solid $green-100;
+        }
+      }
+    }
+  }
+}

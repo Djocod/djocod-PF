@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+$font-SpaceGrotesk: "Space Grotesk", sans-serif;
+$font-Inter: "Inter", sans-serif;
+$font-Aladin: "Aladin", system-ui;
+// Base
+$black: rgb(0, 0, 0); // #000000 - Noir pur
+// Déclinaison de noirs
+$black-900: rgb(15, 15, 20); // #0F0F14 - Noir profond (légère teinte bleue)
+$black-100: rgb(30, 30, 30); // Très légèrement éclairci
+$black-200: rgb(45, 45, 45); // Quasi-noir
+$black-300: rgb(60, 60, 60); // Noir profond
+$black-400: rgb(80, 80, 80); // Noir sombre
+$black-500: rgb(100, 100, 100); // Gris-noir
+$black-600: rgb(130, 130, 130); // Gris foncé
+$black-700: rgb(160, 160, 160); // Gris moyen
+$black-800: rgb(200, 200, 200); // Gris clair
+
+// Verts
+$green-100: #d4e0d9; // Très clair
+$green-200: #a9c1b3; // Clair
+$green-300: #7ea28d; // Moyennement clair
+$green-400: #538367; // Moyen
+$green-500: #1f3d2b; // Original
+$green-600: #193122; // Foncé
+$green-700: #13241a; // Très foncé
+
+//Beige
+$beige-100: #f5f0eb; // Très clair
+$beige-200: #ebe1d7; // Clair
+$beige-300: #e0d2c3; // Moyennement clair
+$beige-400: #d5c3af; // Moyen
+$beige-500: #cabaa2; // Original
+$beige-600: #a29582; // Foncé
+$beige-700: #7a7061; // Très foncé
+
+// background: linear-gradient(to right, $green-100, $green-700);
+// background: linear-gradient(to bottom, $beige-200, $beige-600);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $font-Inter;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  scrollbar-color: transparent;
+  z-index: 0;
+  background: $black-100;
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(-360deg);
+  }
+}

@@ -1,0 +1,52 @@
+.front-Ment {
+  position: relative;
+  overflow: hidden;
+  .fm-ul-container {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    behavior: "smooth";
+    gap: 20px;
+
+    .fm-items {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      gap: 20px;
+      border-radius: 10px;
+      transition: all 0.8s ease-in-out;
+      .fm-title {
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        color: $green-200;
+      }
+      .img-fm {
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: top;
+        transition: all 0.8s ease-in-out;
+      }
+    }
+  }
+  .point-fm-container {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .point-fm {
+      width: 10px;
+      height: 10px;
+      background: $green-100;
+      border-radius: 100%;
+    }
+  }
+}

@@ -1,0 +1,280 @@
+[
+  {
+    "title": "Mystflora",
+    "href": "./CortoFinalProject/index.html",
+    "img": "./CortoFinalProject/img/design-desktop-mystflora.png",
+    "source": "Projet de groupe Hetic",
+    "description1": "est un projet de groupe réalisé à deux. Nous avons réfléchi ensemble aux logiques d'affichage ainsi qu'aux interactions que nous souhaitions intégrer au jeu.",
+    "description2": "Nous nous sommes inspirés du célèbre Cookie Clicker pour concevoir notre propre version. Notre objectif était de proposer une expérience colorée mais douce, avec un design épuré, tout en conservant une certaine complexité dans les mécaniques du jeu.",
+    "date": "décembre 2025",
+    "id": "1",
+    "theme": "Développement d'un idle game",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Conception et Wireframing (Figma)",
+        "description": "Nous avons commencé le projet par la création de plusieurs wireframes sur Figma. Cette étape de maquettage fonctionnel nous a permis de visualiser l'architecture de l'interface et de clarifier les fonctionnalités principales.",
+        "points": [
+          "Tâches :",
+          "structurer les parcours utilisateurs (user flow)",
+          "définir les priorités fonctionnelles",
+          "réduire la complexité technique",
+          "transformer une idée large en une solution réalisable"
+        ],
+        "progress": "Cette phase a marqué une première progression importante : passer d'une vision abstraite à une conception concrète et structurée."
+      },
+      {
+        "id": 2,
+        "title": "Répartition des tâches et organisation",
+        "description": "Nous avons ensuite défini une répartition des rôles afin d'optimiser notre collaboration. Cette phase a révélé certaines difficultés :",
+        "challenges": [
+          "Nos difficultées :",
+          "manque de clarté dans la communication",
+          "ambitions parfois déséquilibrées",
+          "différences de perception sur la vision du projet"
+        ],
+        "learnings": [
+          "Ce que j'ai appris :",
+          "d'une définition précise des responsabilités",
+          "d'un alignement sur les objectifs",
+          "d'une vision commune du produit final"
+        ],
+        "progress": "Cette étape a renforcé notre capacité d'organisation et notre compréhension du travail en équipe dans un contexte de gestion de projet."
+      },
+      {
+        "id": 3,
+        "title": "Design et intégration front-end",
+        "description": "Concernant l'aspect visuel, ma collaboratrice avait une vision plus développée du design global. Je me suis donc positionné comme intégrateur front-end.",
+        "points": [
+          "Tâches :",
+          "l'intégration HTML sémantique",
+          "la mise en page CSS",
+          "le positionnement des éléments",
+          "la structuration de l'interface utilisateur"
+        ],
+        "progress": "Cette expérience m'a permis de consolider mes compétences en structuration d'interface et en séparation du fond (structure HTML) et de la forme (style CSS)."
+      },
+      {
+        "id": 4,
+        "title": "Développement et logique applicative",
+        "description": "Nous avons développé ensemble la partie JavaScript en implémentant :",
+        "points": [
+          "Tâches :",
+          "la gestion des événements (event listeners)",
+          "la logique métier",
+          "les mécanismes dynamiques de l'application",
+          "l'importation et la manipulation de données via un fichier JSON",
+          "la structuration du code en utilisant une classe pour centraliser les composants",
+          "l'organisation des fonctionnalités (features)"
+        ],
+        "progress": "Nous avons eu des divergences sur l'architecture du projet, notamment sur la structuration des fonctionnalités. Ces échanges ont été formateurs, car ils nous ont obligés à justifier nos choix techniques et à améliorer notre capacité d'argumentation. Cette étape marque une progression dans la compréhension de l'architecture logicielle et de la modularité du code."
+      }
+    ]
+  },
+  {
+    "title": "Event-City",
+    "href": "./EventCity/public/landingPage/landingPage.html",
+    "img": "./EventCity/public/asset/img/design-desktop-eventcity.png",
+    "source": "Projet de groupe Hetic",
+    "description1": "est né d'une collaboration entre quatre membres de ma classe. Nous voulions créer une application capable d'aider les utilisateurs à trouver facilement des événements musicaux liés à leurs artistes préférés.",
+    "description2": "Nous avons donc intégré des APIs pour récupérer des données en temps réel et permettre une recherche géolocalisée. Les utilisateurs peuvent ainsi découvrir les concerts, festivals et événements proches d'eux où leurs artistes sont en représentation. Ce projet m'a permis de renforcer ma compréhension du travail en équipe, de l'intégration d'APIs et de la gestion de données dynamiques dans une application web.",
+    "description3": "Ce projet m'a permis de renforcer ma compréhension du travail en équipe, de l'intégration d'APIs et de la gestion de données dynamiques dans une application web.",
+    "date": "décembre 2025",
+    "id": "2",
+
+    "theme": "Application de recherche d'événements musicaux",
+    "tasks": [
+      {
+        "id": 5,
+        "title": "Idéation et définition du concept",
+        "description": "Le projet est né d'une phase de brainstorming réalisée avec trois membres de ma classe. Nous avons exploré plusieurs thématiques en lien avec nos centres d'intérêt et avons décidé de développer une application orientée vers la musique. L'objectif était de concevoir une application capable de rechercher les événements musicaux d'un artiste donné à proximité de l'utilisateur.",
+        "points": [
+          "Tâches :",
+          "définir une problématique claire",
+          "identifier notre cible utilisateur",
+          "formaliser une vision commune du produit"
+        ],
+        "progress": "Cela a marqué le point de départ structuré du projet."
+      },
+      {
+        "id": 6,
+        "title": "Organisation et gestion de projet",
+        "description": "Après validation du concept, nous avons défini les rôles de chacun. J'ai occupé la fonction de chef de projet, avec pour responsabilités :",
+        "points": [
+          "Tâches :",
+          "coordination de l'équipe",
+          "suivi de l'avancement",
+          "gestion du dépôt GitHub",
+          "supervision du versionnement et des contributions"
+        ],
+        "learnings": [
+          "Ce que j'ai appris :",
+          "des compétences en gestion de version (Git)",
+          "une meilleure organisation du travail collaboratif",
+          "une capacité à anticiper les conflits techniques"
+        ],
+        "progress": "J'ai veillé à ce que chaque collaborateur travaille sur la bonne version du projet, en utilisant des branches adaptées et en contrôlant l'intégration des modifications."
+      },
+      {
+        "id": 7,
+        "title": "Répartition technique et conception visuelle",
+        "description": "Nous avons ensuite divisé l'équipe en deux pôles : une équipe orientée design et expérience utilisateur (UI/UX), une équipe en charge de la gestion et du traitement des données. Nous avons conçu un wireframe afin de :",
+        "points": [
+          "Tâches :",
+          "structurer l'interface",
+          "définir les parcours utilisateurs",
+          "organiser les composants (landing page, formulaire de recherche, affichage des événements)",
+          "choisir la palette de couleurs et la hiérarchie visuelle"
+        ],
+        "progress": "Cette étape nous a permis de transformer l'idée initiale en une interface cohérente et fonctionnelle."
+      },
+      {
+        "id": 8,
+        "title": "Architecture front-end et structuration SCSS",
+        "description": "Dans une logique d'optimisation et de maintenabilité, j'ai proposé l'utilisation de SCSS. L'objectif était de :",
+        "points": [
+          "Tâches :",
+          "éviter la répétition de styles",
+          "structurer le code CSS de manière modulaire",
+          "centraliser les variables (couleurs, tailles, espacements)",
+          "définir des règles globales pour garantir la cohérence visuelle",
+          "séparation des composants",
+          "structuration des balises HTML",
+          "paramétrage des styles par blocs fonctionnels"
+        ],
+        "progress": "Cette décision a renforcé la qualité et la scalabilité du projet."
+      },
+      {
+        "id": 9,
+        "title": "Dynamisation de l'interface",
+        "description": "Bien que responsables du design, nous devions également rendre l'application interactive. Nous avons donc intégré :",
+        "points": [
+          "Tâches :",
+          "des animations et transitions en CSS",
+          "des événements JavaScript pour gérer les interactions utilisateur",
+          "des comportements dynamiques liés aux recherches et à l'affichage des résultats"
+        ],
+        "progress": "Cela a permis d'ajouter une dimension plus immersive et fonctionnelle au projet, en améliorant l'expérience utilisateur."
+      },
+      {
+        "id": 10,
+        "title": "Conclusion et progression personnelle",
+        "description": "Ce projet m'a permis de développer plusieurs compétences clés :",
+        "points": [
+          "Tâches :",
+          "gestion d'équipe et coordination",
+          "prise de décision technique",
+          "structuration d'une architecture front-end",
+          "gestion du versionnement avec GitHub",
+          "écoute et adaptation aux besoins des collaborateurs"
+        ],
+        "learnings": [
+          "Ce que j'ai appris :",
+          "maintenir une communication claire",
+          "respecter les attentes de chacun",
+          "concilier vision personnelle et travail collaboratif"
+        ],
+        "progress": "Cette expérience a consolidé mon intérêt pour des rôles combinant architecture technique et gestion de projet, tout en renforçant mes compétences en développement front-end."
+      }
+    ]
+  },
+  {
+    "label": "Agency Landing Page",
+    "href": "./TP-JS-Card-Junior/TP 0.7 Card Agency Landing Page/index.html",
+    "title": "Agency Landing Page",
+    "img": "./TP-JS-Card-Junior/TP 0.7 Card Agency Landing Page/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "3"
+  },
+  {
+    "label": "Blogr Landing Page",
+    "href": "./TP-JS-Card-Junior/TP 0.8 Card Blogr Landing Page/index.html",
+    "title": "Blogr Landing Page",
+    "img": "./TP-JS-Card-Junior/TP 0.8 Card Blogr Landing Page/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "4"
+  },
+  {
+    "label": "Crowfunding Product Page",
+    "href": "./TP-JS-Card-Junior/TP 0.9 Card Crowfungind Product Page/index.html",
+    "title": "Crowfunding Product Page",
+    "img": "./TP-JS-Card-Junior/TP 0.9 Card Crowfungind Product Page/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "5"
+  },
+  {
+    "label": "Card Browser Manager UI",
+    "href": "./TP-JS-Card-Junior/TP-1.1-Card-Browser-Manager-UI/index.html",
+    "title": "Card Browser Manager UI",
+    "img": "./TP-JS-Card-Junior/TP-1.1-Card-Browser-Manager-UI/design/desktop-design-light.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "6"
+  },
+  {
+    "label": "Card Homepage",
+    "href": "./TP-JS-Card-Junior/TP 0.4 Card Homepage/index.html",
+    "title": "Card Homepage",
+    "img": "./TP-JS-Card-Junior/TP 0.4 Card Homepage/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "7"
+  },
+  {
+    "label": "Card Contact Form",
+    "href": "./TP-JS-Card-Junior/TP 0.1 Card Contact Form/index.html",
+    "title": "Card Contact Form",
+    "img": "./TP-JS-Card-Junior/TP 0.1 Card Contact Form/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "8"
+  },
+  {
+    "label": "Card Age Calculator",
+    "href": "./TP-JS-Card-Junior/TP 0.3 Card Age Calculator/index.html",
+    "title": "Card Age Calculator",
+    "img": "./TP-JS-Card-Junior/TP 0.3 Card Age Calculator/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "9"
+  },
+  {
+    "label": "Card Design File",
+    "href": "./TP-JS-Card-Junior/TP 0.5 Card Design File/index.html",
+    "title": "Card Design File",
+    "img": "./TP-JS-Card-Junior/TP 0.5 Card Design File/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "10"
+  },
+  {
+    "label": "Card Newslettre",
+    "href": "./TP-JS-Card-Junior/TP 0.2 Card Newslettre/index.html",
+    "title": "Card Newslettre",
+    "img": "./TP-JS-Card-Junior/TP 0.2 Card Newslettre/design/desktop-design.jpg",
+    "source": "FrontMentor",
+    "description1": "",
+    "description2": "",
+    "description3": "",
+    "id": "11"
+  }
+]

@@ -1,0 +1,185 @@
+.talk-vision {
+  position: relative;
+  background: $black-300;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  .null-span {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 15%;
+    left: -50%;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(35deg);
+    span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: $green-300;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+
+  .back-blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $black-300;
+    filter: blur(250px);
+    z-index: 2;
+  }
+  h2 {
+    position: relative;
+    z-index: 3;
+    font-size: 2rem;
+    color: $green-100;
+    font-family: $font-SpaceGrotesk;
+    margin-bottom: 20px;
+    .fa-hexagon {
+      color: $green-300;
+      font-size: 1.8rem;
+      animation: rotate 5s linear infinite;
+    }
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $black-700;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+  .card-text-vision {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      display: inline-block;
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      color: $green-100;
+      padding: 20px 0px 5px;
+      border-bottom: 3px solid $green-400;
+    }
+    .vision-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        transition:
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+        &:hover {
+          border-color: $green-300;
+          box-shadow: 0 0 0 1px $green-300;
+        }
+      }
+      .card-vision {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background: $black-200;
+        border: 1px solid $black-400;
+        transition:
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+        p {
+          padding: 20px;
+          flex: 1 1 33.33%;
+
+          a {
+            display: inline-block;
+            padding: 0px;
+            color: $green-200;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: $green-100;
+            }
+          }
+          &:nth-child(2) {
+            border-left: 1px solid $green-100;
+            border-right: 1px solid $green-100;
+          }
+        }
+        &:hover {
+          border-color: $green-300;
+          box-shadow: 0 0 0 1px $green-300;
+        }
+      }
+    }
+  }
+  .conclusion-vision {
+    position: relative;
+    z-index: 3;
+    background: $black-100;
+    padding: 20px;
+    margin: 20px 0px 0px auto;
+    border-radius: 8px;
+    width: 40%;
+    border: 1px solid $black-400;
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+    &:hover {
+      border-color: $green-300;
+      box-shadow: 0 0 0 1px $green-300;
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .talk-vision {
+    .card-text-vision {
+      .vision-container {
+        flex-direction: column;
+        gap: 0px;
+        img {
+          margin-top: 20px;
+          width: 300px;
+          height: 300px;
+        }
+        .card-vision {
+          flex-direction: column;
+          width: 100%;
+          p {
+            &:nth-child(2) {
+              border-left: none;
+              border-right: none;
+              border-top: 1px solid $green-100;
+              border-bottom: 1px solid $green-100;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        .vision-container {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+    .conclusion-vision {
+      width: 100%;
+      margin: 20px auto 0px;
+    }
+  }
+}

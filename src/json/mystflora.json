@@ -1,0 +1,64 @@
+{
+  "projet": {
+    "theme": "Développement d'un idle game",
+    "tasks": [
+      {
+        "id": 1,
+        "titre": "Conception et Wireframing (Figma)",
+        "description": "Création de plusieurs wireframes sur Figma pour visualiser l'architecture de l'interface et clarifier les fonctionnalités principales.",
+        "apports": [
+          "Structurer les parcours utilisateurs (user flow)",
+          "Définir les priorités fonctionnelles",
+          "Réduire la complexité technique",
+          "Transformer une idée large en une solution réalisable"
+        ],
+        "progression": "Passer d'une vision abstraite à une conception concrète et structurée"
+      },
+      {
+        "id": 2,
+        "titre": "Répartition des tâches et organisation",
+        "description": "Définition d'une répartition des rôles pour optimiser la collaboration.",
+        "difficultes": [
+          "Manque de clarté dans la communication",
+          "Ambitions parfois déséquilibrées",
+          "Différences de perception sur la vision du projet"
+        ],
+        "apprentissages": [
+          "Définition précise des responsabilités",
+          "Alignement sur les objectifs",
+          "Vision commune du produit final"
+        ],
+        "progression": "Renforcement de la capacité d'organisation et compréhension du travail en équipe dans un contexte de gestion de projet"
+      },
+      {
+        "id": 3,
+        "titre": "Design et intégration front-end",
+        "description": "Positionnement en tant qu'intégrateur front-end, la collaboratrice ayant une vision plus développée du design global.",
+        "responsabilites": [
+          "Intégration HTML sémantique",
+          "Mise en page CSS",
+          "Positionnement des éléments",
+          "Structuration de l'interface utilisateur"
+        ],
+        "progression": "Consolidation des compétences en structuration d'interface et en séparation du fond (structure HTML) et de la forme (style CSS)"
+      },
+      {
+        "id": 4,
+        "titre": "Développement et logique applicative",
+        "description": "Développement conjoint de la partie JavaScript.",
+        "developpement_commun": [
+          "Gestion des événements (event listeners)",
+          "Logique métier",
+          "Mécanismes dynamiques de l'application"
+        ],
+        "focus_personnel": [
+          "Importation et manipulation de données via un fichier JSON",
+          "Structuration du code en utilisant une classe pour centraliser les composants",
+          "Organisation des fonctionnalités (features)"
+        ],
+        "divergences": "Désaccords sur l'architecture du projet, notamment sur la structuration des fonctionnalités — formateurs pour justifier les choix techniques et améliorer la capacité d'argumentation.",
+        "progression": "Progression dans la compréhension de l'architecture logicielle et de la modularité du code"
+      }
+    ]
+  }
+}

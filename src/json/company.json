@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "logo": "./img/leclerc.jpg",
+    "nameComp": "Leclerc Drive",
+    "location": "Figeac 46",
+    "time": "2025",
+    "workstation": "Préparateur de commande",
+    "description": {
+      "activity1": "J'ai évolué dans un environnement structuré et orienté performance, utilisant des outils numériques de gestion des flux pour assurer la fiabilité et l'efficacité des opérations. Cette expérience m'a permis de développer des capacités d'organisation, d'optimisation des processus et de contrôle qualité.",
+      "activity2": "Cette expérience m'a permis de renforcer des compétences clés telles que l'analyse de processus, la coordination inter-équipes, la rigueur et l'amélioration continue."
+    }
+  },
+  {
+    "id": 2,
+    "logo": "./img/jean-larnaudie.jpg",
+    "nameComp": "Jean Larnaudie",
+    "location": "Figeac 46",
+    "time": "2020 - 2024",
+    "workstation": "Poste d'opérateur sur ligne / Assistant chef de ligne",
+    "description": {
+      "activity1": "Dans un environnement industriel, j'ai participé à l'organisation et au suivi des lignes de production dans un cadre où la qualité et le respect des délais étaient essentiels. Cette expérience m'a permis de mieux comprendre le fonctionnement général d'une activité et l'importance d'une bonne organisation pour en assurer l'efficacité.",
+      "activity2": "En coordonnant l'équipe et en gérant les imprévus, j'ai appris à réagir rapidement, à définir les priorités et à maintenir le bon déroulement du travail. Cette expérience m'a permis de développer : sens des responsabilités, esprit d'équipe et capacité d'adaptation."
+    }
+  },
+  {
+    "id": 3,
+    "logo": "./img/taillens.jpg",
+    "nameComp": "Taillens S.A",
+    "location": "SUISSE, Crans Montana",
+    "time": "2023",
+    "workstation": "Vendeur polyvalent en boulangerie.",
+    "description": {
+      "activity1": "À ce poste, j'ai travaillé dans un environnement dynamique où le contact client et l'organisation étaient essentiels. J'ai développé un bon sens du service, de l'écoute et de l'adaptation afin de répondre aux besoins des clients tout en maintenant un espace de vente organisé et attractif.",
+      "activity2": "Cette expérience m'a également appris à être rigoureux, à gérer les priorités, à travailler efficacement en équipe et à respecter des règles précises. J'ai renforcé ma capacité à rester efficace même dans les moments de forte activité."
+    }
+  }
+]
