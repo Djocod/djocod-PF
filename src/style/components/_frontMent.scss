@@ -7,9 +7,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
-    behavior: "smooth";
+    scroll-behavior: smooth;
+    touch-action: pan-x;
+    scrollbar-width: none;
     gap: 20px;
 
     .fm-items {
