@@ -58,5 +58,5 @@
   "devDependencies": {
     "jsonpath": " >=1.2.1 "
   },
-  "homepage": "https://myusername.github.io/my-app"
+  "homepage": "."
 }
