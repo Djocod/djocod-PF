@@ -6,7 +6,23 @@
   background: $black-300;
   padding: 10px;
   overflow: hidden;
-  z-index: 0;
+
+  // ── Style commun aux cellules ──
+  .hero-style {
+    z-index: 3;
+    border-radius: 12px;
+    border: 1px solid $black-400;
+    background: $black-200;
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+
+    &:hover {
+      border-color: $green-400;
+      box-shadow: 0 0 0 1px $green-400;
+    }
+  }
+
   .null-span {
     position: absolute;
     z-index: 1;
@@ -28,6 +44,37 @@
       margin-top: 20px;
     }
   }
+  .navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: $black-200;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
+    .item-nav {
+      margin: 5px;
+      a {
+        display: block;
+        text-decoration: none;
+        font-family: $font-Inter;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        color: $green-200;
+        background: $green-700;
+        padding: 10px;
+        border-radius: 6px;
+        border-left: 3px solid $green-400;
+      }
+    }
+  }
   .background-sqarre {
     background: $beige-100;
     border-radius: 13px;
@@ -40,23 +87,6 @@
       "template template null pic"
       "skills lang pseudo pic";
 
-    // ── Style commun aux cellules ──
-    .hero-style {
-      z-index: 3;
-      border-radius: 12px;
-      border: 1px solid $black-400;
-      background: $black-200;
-      transition:
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-
-      &:hover {
-        border-color: $green-400;
-        box-shadow: 0 0 0 1px $green-400;
-      }
-    }
-
-    // ── Quote / Boris Cyrulnik ──
     .quote-container {
       grid-area: bc;
       width: 100%;
@@ -97,55 +127,22 @@
         }
       }
     }
-
-    // ── Photo de profil ──
-    .profil {
-      grid-area: pic;
-      background: url("../../assets/img/FRANCOUAL_JORDAN.jpg") top/cover
-        no-repeat;
-      border-radius: 12px;
-      border: 2px solid $black-400;
-      position: relative;
-      overflow: hidden;
-
-      &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          to top,
-          rgba($green-700, 0.45) 0%,
-          transparent 60%
-        );
-      }
-    }
-
-    // ── Langues ──
-    .carrousel-fm {
-      grid-area: template;
-      overflow-y: hidden;
-      background: $black-200;
-      padding: 25px;
-      display: grid;
-      place-content: center;
-    }
-
     .direction-container {
       grid-area: direction;
       background: $black-200;
-      padding: 5px 10px;
+      padding: 10px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       align-content: flex-start;
-      align-items: flex-start;
       height: 100%;
       list-style: none;
 
       .item-direction {
-        margin: 10px;
+        margin: 5px;
         a {
+          display: block;
           text-decoration: none;
           font-family: $font-Inter;
           font-size: 0.8rem;
@@ -165,58 +162,32 @@
         }
       }
     }
+    .carrousel-fm {
+      grid-area: template;
+      overflow-y: hidden;
+      background: $black-200;
+      padding: 25px;
+      display: grid;
+      place-content: center;
+    }
+    .profil {
+      grid-area: pic;
+      background: url("../../assets/img/FRANCOUAL_JORDAN.jpg") top/cover
+        no-repeat;
+      border-radius: 12px;
+      border: 2px solid $black-400;
+      position: relative;
+      overflow: hidden;
 
-    // ── Pseudo / Titre ──
-    .pseudo-container {
-      grid-area: pseudo;
-      background: $green-600;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 6px;
-
-      h1 {
-        font-family: $font-SpaceGrotesk;
-        font-size: 2.4rem;
-        font-weight: 700;
-        color: $beige-100;
-        letter-spacing: -0.02em;
-        margin: 0;
-      }
-
-      p em {
-        font-family: $font-Inter;
-        font-size: 0.9rem;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: $green-200;
-      }
-      .link-mail {
-        text-decoration: none;
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        color: $black-300;
-        background: $green-400;
-        border: none;
-        border-radius: 8px;
-        padding: 10px 20px;
-        transition: background 0.3s ease;
-
-        i {
-          font-size: 0.75rem;
-          margin: 0px 10px;
-          color: $beige-100;
-          animation: rotate 5s linear infinite;
-        }
-
-        &:hover {
-          background: $green-300;
-        }
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba($green-700, 0.45) 0%,
+          transparent 60%
+        );
       }
     }
     .skill-container {
@@ -267,6 +238,58 @@
         &:hover {
           background: $green-600;
           color: $green-100;
+        }
+      }
+    }
+    .pseudo-container {
+      grid-area: pseudo;
+      background: $green-600;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+
+      h1 {
+        font-family: $font-SpaceGrotesk;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $beige-100;
+        letter-spacing: -0.02em;
+        margin: 0;
+      }
+
+      p em {
+        font-family: $font-Inter;
+        font-size: 0.9rem;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $green-200;
+      }
+      .link-mail {
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        color: $black-300;
+        background: $green-400;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: background 0.3s ease;
+
+        i {
+          font-size: 0.75rem;
+          margin: 0px 10px;
+          color: $beige-100;
+          animation: rotate 5s linear infinite;
+        }
+
+        &:hover {
+          background: $green-300;
         }
       }
     }
@@ -334,17 +357,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       .profil {
         height: 300px;
       }
-      .nav {
+      .direction-container {
         flex-direction: row;
         justify-content: start;
         width: 100%;
-        .item-direction {
-          margin: 8px 10px;
-        }
       }
       .skill-container {
         flex-direction: row;

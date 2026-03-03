@@ -44,7 +44,21 @@ body {
   background: rgb(60, 60, 60);
   padding: 10px;
   overflow: hidden;
-  z-index: 0;
+}
+.header .hero-style {
+  z-index: 3;
+  border-radius: 12px;
+  border: 1px solid rgb(80, 80, 80);
+  background: rgb(45, 45, 45);
+  -webkit-transition: border-color 0.25s ease, -webkit-box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, -webkit-box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, -webkit-box-shadow 0.25s ease;
+}
+.header .hero-style:hover {
+  border-color: #538367;
+  -webkit-box-shadow: 0 0 0 1px #538367;
+          box-shadow: 0 0 0 1px #538367;
 }
 .header .null-span {
   position: absolute;
@@ -77,6 +91,46 @@ body {
   border-radius: 5px;
   margin-top: 20px;
 }
+.header .navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgb(45, 45, 45);
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.header .navBar .item-nav {
+  margin: 5px;
+}
+.header .navBar .item-nav a {
+  display: block;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  color: #a9c1b3;
+  background: #13241a;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 3px solid #538367;
+}
 .header .background-sqarre {
   background: #f5f0eb;
   border-radius: 13px;
@@ -85,21 +139,6 @@ body {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% auto 30%;
   grid-template-areas: "bc bc bc  direction" "template template null pic" "skills lang pseudo pic";
-}
-.header .background-sqarre .hero-style {
-  z-index: 3;
-  border-radius: 12px;
-  border: 1px solid rgb(80, 80, 80);
-  background: rgb(45, 45, 45);
-  -webkit-transition: border-color 0.25s ease, -webkit-box-shadow 0.25s ease;
-  transition: border-color 0.25s ease, -webkit-box-shadow 0.25s ease;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, -webkit-box-shadow 0.25s ease;
-}
-.header .background-sqarre .hero-style:hover {
-  border-color: #538367;
-  -webkit-box-shadow: 0 0 0 1px #538367;
-          box-shadow: 0 0 0 1px #538367;
 }
 .header .background-sqarre .quote-container {
   grid-area: bc;
@@ -150,33 +189,10 @@ body {
 .header .background-sqarre .quote-container .link-autor:hover {
   color: #d4e0d9;
 }
-.header .background-sqarre .profil {
-  grid-area: pic;
-  background: url("../../assets/img/FRANCOUAL_JORDAN.jpg") top/cover no-repeat;
-  border-radius: 12px;
-  border: 2px solid rgb(80, 80, 80);
-  position: relative;
-  overflow: hidden;
-}
-.header .background-sqarre .profil::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(19, 36, 26, 0.45)), color-stop(60%, transparent));
-  background: linear-gradient(to top, rgba(19, 36, 26, 0.45) 0%, transparent 60%);
-}
-.header .background-sqarre .carrousel-fm {
-  grid-area: template;
-  overflow-y: hidden;
-  background: rgb(45, 45, 45);
-  padding: 25px;
-  display: grid;
-  place-content: center;
-}
 .header .background-sqarre .direction-container {
   grid-area: direction;
   background: rgb(45, 45, 45);
-  padding: 5px 10px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,16 +207,14 @@ body {
           justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   height: 100%;
   list-style: none;
 }
 .header .background-sqarre .direction-container .item-direction {
-  margin: 10px;
+  margin: 5px;
 }
 .header .background-sqarre .direction-container .item-direction a {
+  display: block;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
@@ -218,62 +232,28 @@ body {
   background: #193122;
   color: #d4e0d9;
 }
-.header .background-sqarre .pseudo-container {
-  grid-area: pseudo;
-  background: #193122;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 6px;
+.header .background-sqarre .carrousel-fm {
+  grid-area: template;
+  overflow-y: hidden;
+  background: rgb(45, 45, 45);
+  padding: 25px;
+  display: grid;
+  place-content: center;
 }
-.header .background-sqarre .pseudo-container h1 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #f5f0eb;
-  letter-spacing: -0.02em;
-  margin: 0;
+.header .background-sqarre .profil {
+  grid-area: pic;
+  background: url("../../assets/img/FRANCOUAL_JORDAN.jpg") top/cover no-repeat;
+  border-radius: 12px;
+  border: 2px solid rgb(80, 80, 80);
+  position: relative;
+  overflow: hidden;
 }
-.header .background-sqarre .pseudo-container p em {
-  font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #a9c1b3;
-}
-.header .background-sqarre .pseudo-container .link-mail {
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgb(60, 60, 60);
-  background: #538367;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-}
-.header .background-sqarre .pseudo-container .link-mail i {
-  font-size: 0.75rem;
-  margin: 0px 10px;
-  color: #f5f0eb;
-  -webkit-animation: rotate 5s linear infinite;
-          animation: rotate 5s linear infinite;
-}
-.header .background-sqarre .pseudo-container .link-mail:hover {
-  background: #7ea28d;
+.header .background-sqarre .profil::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(19, 36, 26, 0.45)), color-stop(60%, transparent));
+  background: linear-gradient(to top, rgba(19, 36, 26, 0.45) 0%, transparent 60%);
 }
 .header .background-sqarre .skill-container {
   grid-area: skills;
@@ -342,6 +322,63 @@ body {
 .header .background-sqarre .language-container .language-items:hover {
   background: #193122;
   color: #d4e0d9;
+}
+.header .background-sqarre .pseudo-container {
+  grid-area: pseudo;
+  background: #193122;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
+}
+.header .background-sqarre .pseudo-container h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f5f0eb;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.header .background-sqarre .pseudo-container p em {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a9c1b3;
+}
+.header .background-sqarre .pseudo-container .link-mail {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  background: #538367;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.header .background-sqarre .pseudo-container .link-mail i {
+  font-size: 0.75rem;
+  margin: 0px 10px;
+  color: #f5f0eb;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
+}
+.header .background-sqarre .pseudo-container .link-mail:hover {
+  background: #7ea28d;
 }
 
 @media screen and (max-width: 1280px) {
@@ -417,7 +454,7 @@ body {
   .header .background-sqarre .profil {
     height: 300px;
   }
-  .header .background-sqarre .nav {
+  .header .background-sqarre .direction-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -426,9 +463,6 @@ body {
         -ms-flex-pack: start;
             justify-content: start;
     width: 100%;
-  }
-  .header .background-sqarre .nav .item-direction {
-    margin: 8px 10px;
   }
   .header .background-sqarre .skill-container {
     -webkit-box-orient: horizontal;

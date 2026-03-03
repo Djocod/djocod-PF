@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import xp from "../json/xp.json";
 import icon from "../json/icon.json";
 import FrontMent from "./FrontMent";
 
 const Hero = () => {
+  const nav = useRef(null);
+  useEffect(() => {
+    const handleScrollTop = () => {
+      if (!nav.current) return;
+      if (window.scrollY >= 450) {
+        nav.current.style.transform = "translateY(0%)";
+      } else {
+        nav.current.style.transform = "translateY(-100%)";
+      }
+    };
+
+    window.addEventListener("scroll", handleScrollTop);
+    return () => window.removeEventListener("sccroll", handleScrollTop);
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" id="home">
       <div className="null-span">
         <span></span>
         <span></span>
@@ -30,6 +45,26 @@ const Hero = () => {
         <span></span>
         <span></span>
       </div>
+      <ul className="navBar hero-style" ref={nav}>
+        <li className="item-nav">
+          <a href="#home">Dashboard</a>
+        </li>
+        <li className="item-nav">
+          <a href="#experience">Parcours pro</a>
+        </li>
+        <li className="item-nav">
+          <a href="#project-school">Projet Hetic</a>
+        </li>
+        <li className="item-nav">
+          <a href="#degree">Certification</a>
+        </li>
+        <li className="item-nav">
+          <a href="#talk">Vision</a>
+        </li>
+        <li className="item-nav">
+          <a href="#footer">Contact</a>
+        </li>
+      </ul>
       <div className="background-sqarre">
         <div className="quote-container hero-style">
           <i className="fa-solid fa-hexagon"></i>
@@ -47,8 +82,7 @@ const Hero = () => {
             Boris Cyrulnik
           </a>{" "}
         </div>
-        <div className="profil hero-style"></div>
-        <ul className="direction-container hero-style nav">
+        <ul className="direction-container hero-style">
           <li className="item-direction">
             <a href="#experience">Parcours pro</a>
           </li>
@@ -65,6 +99,10 @@ const Hero = () => {
             <a href="#footer">Contact</a>
           </li>
         </ul>
+        <div className="carrousel-fm hero-style">
+          <FrontMent />
+        </div>
+        <div className="profil hero-style"></div>
         <ul className="skill-container hero-style">
           {(() => {
             const skills = xp.find((xp) => xp.id === 0)?.skill || [];
@@ -82,9 +120,6 @@ const Hero = () => {
             </li>
           ))}
         </ul>
-        <div className="carrousel-fm hero-style">
-          <FrontMent />
-        </div>
         <div className="pseudo-container hero-style">
           <h1>Jordan</h1>
           <p>
