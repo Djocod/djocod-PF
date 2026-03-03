@@ -33,7 +33,7 @@ const ProjectHetic = () => {
         <span></span>
       </div>
       <h2 className="psh-title">
-        <i className="fa-solid fa-hexagon"></i> Project HETIC
+        <i className="fa-solid fa-hexagon"></i> Projet HETIC
       </h2>
       <div className="psh-container">
         {link.slice(0, 2).map((project) => (
@@ -61,7 +61,9 @@ const ProjectHetic = () => {
                 <div key={task.id} className="task-container">
                   <h3
                     className="task-title"
-                    onMouseDown={() => setOnclickTask(task.id)}
+                    onMouseDown={() =>
+                      setOnclickTask((e) => (e === task.id ? null : task.id))
+                    }
                   >
                     {task.title}
                   </h3>

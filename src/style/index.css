@@ -130,6 +130,12 @@ body {
   padding: 10px;
   border-radius: 6px;
   border-left: 3px solid #538367;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.header .navBar .item-nav a:hover {
+  background: #193122;
+  color: #d4e0d9;
 }
 .header .background-sqarre {
   background: #f5f0eb;
@@ -402,19 +408,16 @@ body {
     width: 100%;
     background-position: top;
   }
-  .header .background-sqarre .nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+  .header .background-sqarre .direction-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .header .background-sqarre .nav .item-direction a {
+  .header .background-sqarre .direction-container .item-direction a {
     font-size: 0.6rem;
   }
   .header .background-sqarre .skill-container {

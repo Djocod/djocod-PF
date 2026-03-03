@@ -82,6 +82,16 @@ const Hero = () => {
             Boris Cyrulnik
           </a>{" "}
         </div>
+        <div className="pseudo-container hero-style">
+          <h1>Jordan</h1>
+          <p>
+            <em>Développer Frontend Junior</em>
+          </p>
+          <a className="link-mail" href="mailto:jordan.francoual@hotmail.com">
+            Me contacter
+            <i className="fa-solid fa-hexagon"></i>
+          </a>
+        </div>
         <ul className="direction-container hero-style">
           <li className="item-direction">
             <a href="#experience">Parcours pro</a>
@@ -120,16 +130,6 @@ const Hero = () => {
             </li>
           ))}
         </ul>
-        <div className="pseudo-container hero-style">
-          <h1>Jordan</h1>
-          <p>
-            <em>Développer Frontend Junior</em>
-          </p>
-          <a className="link-mail" href="mailto:jordan.francoual@hotmail.com">
-            Me contacter
-            <i className="fa-solid fa-hexagon"></i>
-          </a>
-        </div>
       </div>
     </header>
   );

@@ -60,7 +60,9 @@ const Experience = () => {
             <li
               className="xp-card-item"
               key={company.id}
-              onMouseEnter={() => setHoveredId(company.id)}
+              onClick={() =>
+                setHoveredId((e) => (e === company.id ? null : company.id))
+              }
             >
               <div className="item-header">
                 <h3>{company.nameComp}</h3>

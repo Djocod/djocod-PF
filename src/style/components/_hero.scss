@@ -72,6 +72,12 @@
         padding: 10px;
         border-radius: 6px;
         border-left: 3px solid $green-400;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: $green-600;
+          color: $green-100;
+        }
       }
     }
   }
@@ -321,11 +327,9 @@
         width: 100%;
         background-position: top;
       }
-      .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-end;
-        align-items: flex-end;
+      .direction-container {
+        flex-direction: row;
+        justify-content: flex-start;
 
         .item-direction {
           a {
