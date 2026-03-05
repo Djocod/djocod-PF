@@ -33,7 +33,7 @@ const Talk = () => {
         <i className="fa-solid fa-hexagon"></i> Mon chemin
       </h2>
       <div className="card-text-vision">
-        <h3>Mon orientation</h3>
+        <h3>Pourquoi le webdesign ?</h3>
         <div className="vision-container">
           <img src={require("../assets/img/desk-green.jpeg")} alt="computer" />
           <div className="card-vision">
@@ -73,7 +73,7 @@ const Talk = () => {
         </div>
       </div>
       <div className="card-text-vision">
-        <h3>Débuts en développement web</h3>
+        <h3>Mes premières lignes de code</h3>
         <div className="vision-container">
           <div className="card-vision">
             <p>

@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import link from "../json/link.json";
 const ProjectHetic = () => {
   const [onclickTask, setOnclickTask] = useState(null);
+  const [onclickTitleCheck, setOnclickTitleCheck] = useState(null);
   return (
-    <section
-      className="body-project-hetic"
-      id="project-school"
-      onMouseLeave={() => setOnclickTask(null)}
-    >
+    <section className="body-project-hetic" id="project-school">
       <div className="null-span">
         <span></span>
         <span></span>
@@ -33,7 +30,7 @@ const ProjectHetic = () => {
         <span></span>
       </div>
       <h2 className="psh-title">
-        <i className="fa-solid fa-hexagon"></i> Projet HETIC
+        <i className="fa-solid fa-hexagon"></i> Projets académiques
       </h2>
       <div className="psh-container">
         {link.slice(0, 2).map((project) => (
@@ -60,12 +57,16 @@ const ProjectHetic = () => {
               {project.tasks.map((task) => (
                 <div key={task.id} className="task-container">
                   <h3
-                    className="task-title"
-                    onMouseDown={() =>
-                      setOnclickTask((e) => (e === task.id ? null : task.id))
-                    }
+                    className={`${onclickTitleCheck === task.id ? "task-title" : "task-title check"}`}
+                    onMouseDown={() => {
+                      setOnclickTask((e) => (e === task.id ? null : task.id));
+                      setOnclickTitleCheck((e) =>
+                        e === task.id ? null : task.id,
+                      );
+                    }}
                   >
                     {task.title}
+                    <i class="fa-solid fa-chevron-down"></i>
                   </h3>
                   <div
                     className={`${onclickTask === task.id ? "task-onclick" : "task-unOnclick"}`}

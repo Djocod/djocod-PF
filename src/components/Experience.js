@@ -52,7 +52,7 @@ const Experience = () => {
       </div>
 
       <h2>
-        <i className="fa-solid fa-hexagon icon-Abs"></i> Expérience
+        <i className="fa-solid fa-hexagon icon-Abs"></i> Expériences
       </h2>
       <div className="slide-experience">
         <ul className="xp-container">

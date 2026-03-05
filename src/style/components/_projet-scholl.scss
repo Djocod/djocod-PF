@@ -126,11 +126,17 @@
       .task-container {
         padding: 10px;
         .task-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           padding: 10px;
           font-size: 1.2rem;
           cursor: pointer;
           border-radius: 3px;
-
+          .fa-chevron-down {
+            transform: rotate(-45deg);
+            transition: all 0.25s ease;
+          }
           transition:
             border-color 0.25s ease,
             box-shadow 0.25s ease;
@@ -138,6 +144,11 @@
           &:hover {
             border-color: $green-300;
             box-shadow: 0 0 0 1px $green-300;
+          }
+        }
+        .check {
+          .fa-chevron-down {
+            transform: rotate(0deg);
           }
         }
         .task-unOnclick {

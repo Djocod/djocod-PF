@@ -47,8 +47,9 @@ const Cerification = () => {
             rel="noreferrer"
           >
             freeCodeCamp
-          </a>
-          , dans une démarche d'amélioration continue et de consolidation de mes
+          </a>{" "}
+          (Responsive Web Design Certification, JavaScript Certification), dans
+          une démarche d'amélioration continue et de consolidation de mes
           compétences.
         </p>
         <p>

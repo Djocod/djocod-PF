@@ -59,7 +59,7 @@ const Hero = () => {
           <a href="#degree">Certification</a>
         </li>
         <li className="item-nav">
-          <a href="#talk">Vision</a>
+          <a href="#talk">Mon chemin</a>
         </li>
         <li className="item-nav">
           <a href="#footer">Contact</a>
@@ -73,20 +73,18 @@ const Hero = () => {
             <br />
             pas la marche arrière"
           </p>
-          <a
+          {/* <a
             href="https://fr.wikipedia.org/wiki/Boris_Cyrulnik"
             target="_blank"
             rel="noreferrer"
             className="link-autor"
           >
             Boris Cyrulnik
-          </a>{" "}
+          </a>{" "} */}
         </div>
         <div className="pseudo-container hero-style">
           <h1>Jordan</h1>
-          <p>
-            <em>Développer Frontend Junior</em>
-          </p>
+          <p>Développer Frontend Junior</p>
           <a className="link-mail" href="mailto:jordan.francoual@hotmail.com">
             Me contacter
             <i className="fa-solid fa-hexagon"></i>
@@ -103,7 +101,7 @@ const Hero = () => {
             <a href="#degree">Certification</a>
           </li>
           <li className="item-direction">
-            <a href="#talk">Vision</a>
+            <a href="#talk">Mon chemin</a>
           </li>
           <li className="item-direction">
             <a href="#footer">Contact</a>
