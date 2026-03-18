@@ -33,7 +33,7 @@ const ProjectHetic = () => {
         <i className="fa-solid fa-hexagon"></i> Projets académiques
       </h2>
       <div className="psh-container">
-        {link.slice(0, 2).map((project) => (
+        {link.slice(0, 3).map((project) => (
           <div key={project.id} className="psh-items">
             <div className="psh-container-left">
               <img src={project.img} alt={`you watch ${project.title} psh`} />
