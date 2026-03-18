@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import link from "../json/link.json";
+import projectsSchol from "../json/projectsSchool.json";
 const ProjectHetic = () => {
   const [onclickTask, setOnclickTask] = useState(null);
   const [onclickTitleCheck, setOnclickTitleCheck] = useState(null);
@@ -33,7 +33,7 @@ const ProjectHetic = () => {
         <i className="fa-solid fa-hexagon"></i> Projets académiques
       </h2>
       <div className="psh-container">
-        {link.slice(0, 3).map((project) => (
+        {projectsSchol.map((project) => (
           <div key={project.id} className="psh-items">
             <div className="psh-container-left">
               <img src={project.img} alt={`you watch ${project.title} psh`} />
