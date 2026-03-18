@@ -9,6 +9,7 @@ import Contact from "../components/Contact";
 const Home = () => {
   return (
     <div className="body-home">
+      je suis ok
       <Hero />
       <Experience />
       <ProjectHetic />
