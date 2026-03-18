@@ -1,0 +1,103 @@
+header {
+  background: url(../../images/image-hero-desktop.jpg) center/cover no-repeat;
+  height: 400px;
+  transition: all 0.5s ease-in-out;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+
+    .crowd {
+      margin: 50px;
+    }
+    .burger,
+    .closeBurger {
+      display: none;
+    }
+    .nav-ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      list-style: none;
+
+      .nav-item {
+        cursor: pointer;
+        padding: 10px;
+        transition: 0.3s ease-in-out;
+        border: 1px solid transparent;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          @media screen and (max-width: 880px) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .nav-item:hover {
+        box-shadow: 4px -4px 0px 0px hsl(176, 50%, 47%);
+        border-radius: 5px;
+        border: 1px solid rgb(255, 255, 255, 0.5);
+      }
+    }
+  }
+  @media screen and (max-width: 730px) {
+    background: url(../../images/image-hero-mobile.jpg) center/cover no-repeat;
+    .nav {
+      position: relative;
+      width: 100%;
+      align-items: start;
+      .showSide {
+        display: block;
+        align-items: start;
+      }
+      .crowd {
+        margin: 20px;
+      }
+      .burger {
+        display: block;
+        margin: 25px;
+      }
+      .closeBurger {
+        position: absolute;
+        display: none;
+        top: 25px;
+        right: 25px;
+      }
+      .nav-ul {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        background: white;
+        left: 10%;
+        top: 60px;
+        width: 80%;
+        border-radius: 15px;
+        .nav-item {
+          padding: 15px;
+          border: 1px solid transparent;
+          border-bottom: 1px solid gray;
+          width: 100%;
+          &:nth-child(3) {
+            border-bottom: 1px solid transparent;
+          }
+          a {
+            color: black;
+            font-weight: 500;
+          }
+          &:hover {
+            border-bottom: 1px solid gray;
+            border: 1px solid transparent;
+            box-shadow: none;
+            border-radius: 15px;
+            background: hsl(176, 50%, 47%);
+          }
+        }
+      }
+    }
+  }
+}

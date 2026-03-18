@@ -1,0 +1,125 @@
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .card {
+    flex: 0 1 33%;
+    max-width: 31.2%;
+    min-width: 260px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    height: 150px;
+    border-radius: 8px;
+    background: hsl(200, 60%, 99%);
+    border: 1px solid hsl(217, 61%, 90%);
+    box-shadow: 0px 2px 10px 0px hsl(217, 61%, 90%);
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      img {
+        height: 40px;
+      }
+      .head-text {
+        padding: 0px 10px;
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .button-head {
+      position: relative;
+      padding: 20px 0px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .remove-btn {
+        font-family: "NotoVariable", sans-serif;
+        font-weight: 200;
+        background: transparent;
+        border: 1px solid hsl(217, 61%, 90%);
+        padding: 5px 12px;
+        border-radius: 50px;
+        color: hsl(225, 23%, 24%);
+
+        &:hover {
+          transition: 0.2s ease-in-out;
+          border: 1px solid hsl(3, 77%, 44%);
+          background: hsl(226, 11%, 37%);
+          border-radius: 50px;
+        }
+        &.checked {
+          border: 1px solid hsl(0, 0%, 93%);
+          background: hsl(3, 77%, 44%);
+          color: hsl(200, 60%, 99%);
+        }
+      }
+      /* The switch - the box around the slider */
+      label {
+        font-size: 17px;
+        position: relative;
+        width: 14.5%;
+
+        input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+          &:checked + .slider {
+            background: hsl(3, 86%, 64%);
+          }
+          &:checked + .slider:before {
+            transform: translateX(100%);
+          }
+        }
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          border: 1px solid hsl(226, 11%, 37%);
+          background: hsl(0, 0%, 78%);
+          border-radius: 50px;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          &:before {
+            position: absolute;
+            content: "";
+            width: 18px;
+            height: 18px;
+            inset: 0;
+            background-color: white;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+          &:hover {
+            transition: 0.2s ease-in-out;
+            border: 1px solid hsl(3, 77%, 44%);
+            background: hsl(226, 11%, 37%);
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+  .bg-moon {
+    background: hsl(225, 23%, 24%);
+    border: 1px solid hsl(226, 11%, 37%);
+    box-shadow: none;
+
+    .button-head .remove-btn {
+      color: hsl(0, 0%, 93%);
+      border: 1px solid hsl(0, 0%, 93%);
+    }
+  }
+}

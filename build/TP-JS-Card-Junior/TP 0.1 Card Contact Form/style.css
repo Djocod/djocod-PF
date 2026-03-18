@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  /* ###Primary */
+  --GreenL: hsl(148, 38%, 91%);
+  --GreenM: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --GreyM: hsl(186, 15%, 59%);
+  --GreyD: hsl(187, 24%, 22%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  background: var(--GreenL);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+/* ----------------------------------------------------------- */
+
+main {
+  background: var(--White);
+  padding: 30px;
+  border-radius: 15px;
+  color: var(--GreyD);
+  width: 30%;
+  border: 5px solid var(--GreyD);
+  box-shadow: 0px 0px 0px 20px var(--GreyD);
+  transition: all 0.5s ease-in-out;
+}
+main:hover {
+  /* transform: scale(0.95); */
+  /* transition: 0.5s ease-in-out; */
+  /* transform-style: preserve-3d;
+  transform: rotateY(45deg);
+  perspective: 5000px; */
+}
+/* ----------------------------------------------------------- */
+main:hover:before {
+  opacity: 1;
+  transform: translate(73%, -48%);
+  height: 350px;
+  width: 350px;
+  box-shadow: 0px 0px 20px 0px var(--GreyD);
+  transition: 0.5s ease-in-out;
+}
+main:before {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-radius: 250px;
+  background: linear-gradient(43deg, hsl(169, 82%, 27%), hsl(186, 15%, 59%));
+  transition: 0.5s ease-in-out;
+}
+/* ----------------------------------------------------------- */
+main:hover:after {
+  opacity: 1;
+  transform: translate(-68%, -70%);
+  height: 400px;
+  width: 400px;
+  box-shadow: 0px 0px 20px 0px var(--GreyD);
+  transition: 0.5s ease-in-out;
+}
+main:after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  content: "";
+  height: 0px;
+  width: 0px;
+  border-radius: 250px;
+  background: linear-gradient(233deg, hsl(169, 82%, 27%), hsl(187, 24%, 22%));
+  transition: 0.5s ease-in-out;
+}
+/* ----------------------------------------------------------- */
+main > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.alert {
+  display: none;
+  position: absolute;
+  width: 65%;
+  top: -7%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--White);
+  font-size: 0.8rem;
+  background: var(--GreyD);
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+.alert-title {
+  display: flex;
+  text-align: center;
+}
+.alert-title > img {
+  height: 20px;
+}
+.alert-title > h3 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+form {
+  margin: 15px 0;
+}
+label > span {
+  color: var(--GreenM);
+}
+
+/* settings input text & mail */
+.name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+#firstName,
+#lastName {
+  display: inline-block;
+}
+input {
+  margin: 10px 0;
+  padding: 8px 5px;
+  border: 2px solid var(--GreenL);
+  border-radius: 5px;
+}
+
+.error input,
+.error textarea {
+  border: 1px solid var(--Red);
+}
+form > .error span,
+form div > .error span,
+form div > .error ~ span {
+  display: inline-block;
+  color: var(--Red);
+  font-size: 0.6rem;
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible {
+  outline: var(--GreyM) solid 1px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+}
+.email-container {
+  padding-bottom: 10px;
+}
+
+/*  settting Radio */
+.type-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 10px;
+}
+.general,
+.support {
+  padding: 3px 20px;
+  border: 1px solid var(--GreenL);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.general:hover,
+.support:hover {
+  background: var(--GreenL);
+  border: 1px solid var(--GreyM);
+}
+.general:focus,
+.support:focus {
+  background: var(--Red);
+  border: 1px solid var(--GreyM);
+}
+input[type="radio"] {
+  accent-color: var(--GreenM);
+}
+
+/*  settting Message */
+textarea {
+  margin: 10px 0;
+  width: 100%;
+  height: 80px;
+  resize: none;
+  padding: 10px;
+  border: 2px solid var(--GreenL);
+  border-radius: 5px;
+  color: var(--Greyd);
+}
+textarea:focus-visible {
+  outline: var(--GreyM) solid 1px;
+}
+
+/*  settting check */
+
+input[type="checkbox"] {
+  accent-color: var(--GreenM);
+  margin-right: 10px;
+}
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: var(--GreenM);
+  color: var(--White);
+  font-weight: 400;
+  transition: all 0.5s ease;
+}
+button:hover {
+  background: var(--GreenL);
+  border: 1px solid var(--GreyM);
+  color: var(--Greyd);
+}
+
+@media screen and (max-width: 1500px) {
+  main {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    width: 95%;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .type-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .type-container label,
+  .type-container label {
+    margin: 5px 0;
+  }
+  .alert {
+    width: 100%;
+    text-align: center;
+  }
+  .alert-title {
+    display: block;
+    margin: 0 auto;
+  }
+}
