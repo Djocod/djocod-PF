@@ -1,5 +1,77 @@
 [
   {
+    "title": "CRM-Automne",
+    "href": "./CortoFinalProject/index.html",
+    "img": "./CortoFinalProject/img/design-desktop-mystflora.png",
+    "source": "Projet de groupe Hetic",
+    "description1": "est un projet de groupe réalisé à deux lors d'une semaine d'initiation à Javascript. Nous avons réfléchi ensemble aux logiques d'affichage ainsi qu'aux interactions que nous souhaitions intégrer au jeu.",
+    "description2": "Nous nous sommes inspirés du célèbre Cookie Clicker pour concevoir notre propre version. Notre objectif était de proposer une expérience colorée mais douce, avec un design épuré, tout en conservant une certaine complexité dans les mécaniques du jeu.",
+    "date": "décembre 2025",
+    "id": "1",
+    "theme": "Développement d'un idle game",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Conception et Wireframing (Figma)",
+        "description": "Nous avons commencé le projet par la création de plusieurs wireframes sur Figma. Cette étape de maquettage fonctionnel nous a permis de visualiser l'architecture de l'interface et de clarifier les fonctionnalités principales.",
+        "points": [
+          "Tâches :",
+          "structurer les parcours utilisateurs (user flow)",
+          "définir les priorités fonctionnelles",
+          "réduire la complexité technique",
+          "transformer une idée large en une solution réalisable"
+        ],
+        "progress": "Cette phase a marqué une première progression importante : passer d'une vision abstraite à une conception concrète et structurée."
+      },
+      {
+        "id": 2,
+        "title": "Répartition des tâches et organisation",
+        "description": "Nous avons ensuite défini une répartition des rôles afin d'optimiser notre collaboration. Cette phase a révélé certaines difficultés :",
+        "challenges": [
+          "Nos difficultés :",
+          "manque de clarté dans la communication",
+          "ambitions parfois déséquilibrées",
+          "différences de perception sur la vision du projet"
+        ],
+        "learnings": [
+          "Ce que j'ai appris :",
+          "une définition précise des responsabilités",
+          "un alignement sur les objectifs",
+          "une vision commune du produit final"
+        ],
+        "progress": "Cette étape a renforcé notre capacité d'organisation et notre compréhension du travail en équipe dans un contexte de gestion de projet."
+      },
+      {
+        "id": 3,
+        "title": "Design et intégration front-end",
+        "description": "Concernant l'aspect visuel, ma collaboratrice avait une vision plus développée du design global. Je me suis donc positionné comme intégrateur front-end.",
+        "points": [
+          "Tâches :",
+          "l'intégration HTML sémantique",
+          "la mise en page CSS",
+          "le positionnement des éléments",
+          "la structuration de l'interface utilisateur"
+        ],
+        "progress": "Cette expérience m'a permis de consolider mes compétences en structuration d'interface et en séparation du fond (structure HTML) et de la forme (style CSS)."
+      },
+      {
+        "id": 4,
+        "title": "Développement et logique applicative",
+        "description": "Nous avons développé ensemble la partie JavaScript en implémentant :",
+        "points": [
+          "Tâches :",
+          "la gestion des événements (event listeners)",
+          "la logique métier",
+          "les mécanismes dynamiques de l'application",
+          "l'importation et la manipulation de données via un fichier JSON",
+          "la structuration du code en utilisant une classe pour centraliser les composants",
+          "l'organisation des fonctionnalités (features)"
+        ],
+        "progress": "Nous avons eu des divergences sur l'architecture du projet, notamment sur la structuration des fonctionnalités. Ces échanges ont été formateurs, car ils nous ont obligés à justifier nos choix techniques et à améliorer notre capacité d'argumentation. Cette étape marque une progression dans la compréhension de l'architecture logicielle et de la modularité du code."
+      }
+    ]
+  },
+  {
     "title": "Mystflora",
     "href": "./CortoFinalProject/index.html",
     "img": "./CortoFinalProject/img/design-desktop-mystflora.png",
@@ -28,16 +100,16 @@
         "title": "Répartition des tâches et organisation",
         "description": "Nous avons ensuite défini une répartition des rôles afin d'optimiser notre collaboration. Cette phase a révélé certaines difficultés :",
         "challenges": [
-          "Nos difficultées :",
+          "Nos difficultés :",
           "manque de clarté dans la communication",
           "ambitions parfois déséquilibrées",
           "différences de perception sur la vision du projet"
         ],
         "learnings": [
           "Ce que j'ai appris :",
-          "d'une définition précise des responsabilités",
-          "d'un alignement sur les objectifs",
-          "d'une vision commune du produit final"
+          "une définition précise des responsabilités",
+          "un alignement sur les objectifs",
+          "une vision commune du produit final"
         ],
         "progress": "Cette étape a renforcé notre capacité d'organisation et notre compréhension du travail en équipe dans un contexte de gestion de projet."
       },
