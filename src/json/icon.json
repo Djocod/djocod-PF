@@ -20,11 +20,6 @@
     "id": "f154"
   },
   {
-    "img": "python",
-    "href": "./img/icons8-python-50.svg",
-    "id": "5169"
-  },
-  {
     "img": "react",
     "href": "./img/icons8-react-native.svg",
     "id": "1ea5"
@@ -33,5 +28,10 @@
     "img": "redux",
     "href": "./img/icons8-redux.svg",
     "id": "feda"
+  },
+  {
+    "img": "python",
+    "href": "./img/icons8-python-50.svg",
+    "id": "5169"
   }
 ]

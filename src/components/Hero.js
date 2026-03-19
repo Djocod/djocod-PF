@@ -108,6 +108,7 @@ const Hero = () => {
           </li>
         </ul>
         <div className="carrousel-fm hero-style">
+          <h2>Défi template</h2>
           <FrontMent />
         </div>
         <div className="profil hero-style"></div>
