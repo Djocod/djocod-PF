@@ -2,6 +2,8 @@ const cardCont = document.querySelector(".container-card");
 const btnMoon = document.querySelector(".btn-moon");
 const turnMoon = document.querySelector(".turn-light");
 const bgMoon = document.querySelector(".light-container");
+import data from "./data.json";
+console.log(data);
 
 btnMoon.addEventListener("click", (e) => {
   document.body.classList.toggle("moon");
@@ -44,21 +46,22 @@ function showCardInactif() {
 }
 
 function getExtension() {
-  fetch("http://localhost:3000/extension")
-    .then((res) => res.json())
-    .then((res) => {
-      cardCont.innerHTML = "";
-      res.forEach((data) => {
-        console.log(data);
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
+  // fetch("http://localhost:3000/extension")
+  //   .then((res) => res.json())
+  //   .then((res) => {
+  //     cardCont.innerHTML = "";
+  //   });
+  data.map((data) => {
+    console.log(data);
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
       <div class="head">
-          <img src=${data.logo}>
-        <div class="head-text">
-          <h3>${data.name}</h3>
-          <p>${data.description}</p>
-        </div>
+      <img src=${data.logo}>
+      <div class="head-text">
+      <h3>${data.name}</h3>
+      <p>${data.description}</p>
+      </div>
       </div>
       <div class="button-head">
         <button class="remove-btn">Remove</button>
@@ -69,22 +72,19 @@ function getExtension() {
       </div>
       `;
 
-        cardCont.appendChild(card);
-      });
-      cardCont.addEventListener("click", (e) => {
-        if (e.target.classList.contains("remove-btn")) {
-          const card = e.target.closest(".card");
-          const input = card.querySelector("input[type='checkbox']");
-          if (input) input.checked = false;
-        }
-      });
-
-      document
-        .getElementById("active")
-        .addEventListener("click", showCardActive);
-      document
-        .getElementById("inactif")
-        .addEventListener("click", showCardInactif);
+    cardCont.appendChild(card);
+    cardCont.addEventListener("click", (e) => {
+      if (e.target.classList.contains("remove-btn")) {
+        const card = e.target.closest(".card");
+        const input = card.querySelector("input[type='checkbox']");
+        if (input) input.checked = false;
+      }
     });
+
+    document.getElementById("active").addEventListener("click", showCardActive);
+    document
+      .getElementById("inactif")
+      .addEventListener("click", showCardInactif);
+  });
 }
 getExtension();

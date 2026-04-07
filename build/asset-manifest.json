@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.43f843ab.css",
-    "main.js": "./static/js/main.60fb3c60.js",
+    "main.css": "./static/css/main.529d6555.css",
+    "main.js": "./static/js/main.85ef90a9.js",
     "static/media/agricultural-silos-building-exterior.jpg": "./static/media/agricultural-silos-building-exterior.430d840fe416e87c406d.jpg",
     "static/media/FRANCOUAL_JORDAN.jpg": "./static/media/FRANCOUAL_JORDAN.34b27a36a52bbcf1e2ae.jpg",
     "static/media/desk-green-blur.jpeg": "./static/media/desk-green-blur.1fe5fd9693675f3d865f.jpeg",
     "static/media/desk-green.jpeg": "./static/media/desk-green.533fa203524ce27aab86.jpeg",
     "index.html": "./index.html",
-    "main.43f843ab.css.map": "./static/css/main.43f843ab.css.map",
-    "main.60fb3c60.js.map": "./static/js/main.60fb3c60.js.map"
+    "main.529d6555.css.map": "./static/css/main.529d6555.css.map",
+    "main.85ef90a9.js.map": "./static/js/main.85ef90a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.43f843ab.css",
-    "static/js/main.60fb3c60.js"
+    "static/css/main.529d6555.css",
+    "static/js/main.85ef90a9.js"
   ]
 }
