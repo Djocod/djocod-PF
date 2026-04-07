@@ -6,8 +6,8 @@
     "source": "Projet de groupe Hetic",
     "description1": "est une application web de gestion de la relation client, conçue à la demande d'un personal shopper et développée spécifiquement pour le secteur de l'e-commerce et de la recommandation. Née d'un besoin terrain exprimé par un professionnel de l'accompagnement client, elle répond à une problématique concrète : donner à un personal shopper, ou plus largement à tout service client ou équipe commerciale, une vision complète, claire et instantanée de l'historique d'achat de chaque client.",
     "description2": "Pour la réalisation de ce projet, nous avons eu l'opportunité de pouvoir collaborer avec une Personal Shopper, qui nous a exprimé les différentes problématiques qu'elle pouvait rencontrer au quotidien dans son activité. Nous étions 3 étudiants prêts à écouter ses requêtes et besoins nécessaires à l'amélioration de son CRM.",
-    "date": "décembre 2025",
-    "id": "1",
+    "date": "Mars 2026",
+    "id": 1,
     "theme": "Amélioration D'un CRM",
     "tasks": [
       {
@@ -119,7 +119,7 @@
     "description1": "est un projet de groupe réalisé à deux lors d'une semaine d'initiation à Javascript. Nous avons réfléchi ensemble aux logiques d'affichage ainsi qu'aux interactions que nous souhaitions intégrer au jeu.",
     "description2": "Nous nous sommes inspirés du célèbre Cookie Clicker pour concevoir notre propre version. Notre objectif était de proposer une expérience colorée mais douce, avec un design épuré, tout en conservant une certaine complexité dans les mécaniques du jeu.",
     "date": "décembre 2025",
-    "id": "2",
+    "id": 2,
     "theme": "Développement d'un idle game",
     "tasks": [
       {
@@ -189,7 +189,7 @@
     "description2": "Nous avons donc intégré des APIs pour récupérer des données en temps réel et permettre une recherche géolocalisée. Les utilisateurs peuvent ainsi découvrir les concerts, festivals et événements proches d'eux où leurs artistes sont en représentation. Ce projet m'a permis de renforcer ma compréhension du travail en équipe, de l'intégration d'APIs et de la gestion de données dynamiques dans une application web.",
     "description3": "Ce projet m'a permis de renforcer ma compréhension du travail en équipe, de l'intégration d'APIs et de la gestion de données dynamiques dans une application web.",
     "date": "décembre 2025",
-    "id": "3",
+    "id": 3,
 
     "theme": "Application de recherche d'événements musicaux",
     "tasks": [

@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import xp from "../json/xp.json";
 import icon from "../json/icon.json";
 import FrontMent from "./FrontMent.js";
-import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const nav = useRef(null);

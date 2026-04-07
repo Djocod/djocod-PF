@@ -34,7 +34,7 @@ const ProjectHetic = () => {
       </h2>
       <div className="psh-container">
         {projectsSchool
-          .filter((project1) => project1.id === "1")
+          .filter((project1) => project1.id === 1)
           .map((project) => (
             <div key={project.id} className="psh-items">
               <div className="psh-container-left">
