@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "title": "CRM-Automne",
     "href": "",
     "video": "./img/démo-CRM-Mongo.webm",
@@ -112,6 +113,8 @@
     ]
   },
   {
+=======
+>>>>>>> 17658b51107ddcb476a31e04f1f68f839f722830
     "title": "Mystflora",
     "href": "./CortoFinalProject/index.html",
     "img": "./CortoFinalProject/img/design-desktop-mystflora.png",
