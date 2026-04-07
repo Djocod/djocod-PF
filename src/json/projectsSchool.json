@@ -2,69 +2,112 @@
   {
     "title": "CRM-Automne",
     "href": "",
-    "img": "./CortoFinalProject/img/design-desktop-mystflora.png",
+    "video": "./img/démo-CRM-Mongo.webm",
     "source": "Projet de groupe Hetic",
-    "description1": "est un projet de groupe réalisé à deux lors d'une semaine d'initiation à Javascript. Nous avons réfléchi ensemble aux logiques d'affichage ainsi qu'aux interactions que nous souhaitions intégrer au jeu.",
-    "description2": "Nous nous sommes inspirés du célèbre Cookie Clicker pour concevoir notre propre version. Notre objectif était de proposer une expérience colorée mais douce, avec un design épuré, tout en conservant une certaine complexité dans les mécaniques du jeu.",
+    "description1": "est une application web de gestion de la relation client, conçue à la demande d'un personal shopper et développée spécifiquement pour le secteur de l'e-commerce et de la recommandation. Née d'un besoin terrain exprimé par un professionnel de l'accompagnement client, elle répond à une problématique concrète : donner à un personal shopper, ou plus largement à tout service client ou équipe commerciale, une vision complète, claire et instantanée de l'historique d'achat de chaque client.",
+    "description2": "Pour la réalisation de ce projet, nous avons eu l'opportunité de pouvoir collaborer avec une Personal Shopper, qui nous a exprimé les différentes problématiques qu'elle pouvait rencontrer au quotidien dans son activité. Nous étions 3 étudiants prêts à écouter ses requêtes et besoins nécessaires à l'amélioration de son CRM.",
     "date": "décembre 2025",
     "id": "1",
-    "theme": "Développement d'un idle game",
+    "theme": "Amélioration D'un CRM",
     "tasks": [
       {
         "id": 1,
-        "title": "Conception et Wireframing (Figma)",
-        "description": "Nous avons commencé le projet par la création de plusieurs wireframes sur Figma. Cette étape de maquettage fonctionnel nous a permis de visualiser l'architecture de l'interface et de clarifier les fonctionnalités principales.",
+        "title": "Déterminer la problématique",
+        "description": "Le personal shopper a du mal à retrouver rapidement les produits déjà montrés ou achetés par un client parce que ces informations sont dispersées (tickets, mémoire, captures d'écran), ce qui entraîne une perte de temps et fragilise la relation avec le client.",
+        "persona": "Personal shoppers de 26-39 ans, travaillant dans un magasin de luxe. Il accompagne les clients fidèles dans leurs choix vestimentaires et doit fournir des recommandations personnalisées.",
         "points": [
-          "structurer les parcours utilisateurs (user flow)",
-          "définir les priorités fonctionnelles",
-          "réduire la complexité technique",
-          "transformer une idée large en une solution réalisable"
+          "- informations dispersées (tickets, mémoire, captures d'écran)",
+          "- difficulté à retrouver les tailles et les modèles",
+          "- perte de temps devant le client",
+          "- perte de crédibilité dans la relation client",
+          "- CRM interne peu adapté",
+          "- mémoire personnelle",
+          "- captures d'écran ou notes",
+          "- interaction directe avec le client en magasin",
+          "- environnement parfois bruyant et rapide",
+          "- quelques secondes pour retrouver une information"
         ],
-        "progress": "Cette phase a marqué une première progression importante : passer d'une vision abstraite à une conception concrète et structurée."
+        "progress": "Retrouver rapidement les produits déjà montrés ou achetés par un client afin de proposer des recommandations pertinentes."
       },
       {
         "id": 2,
-        "title": "Répartition des tâches et organisation",
-        "description": "Nous avons ensuite défini une répartition des rôles afin d'optimiser notre collaboration. Cette phase a révélé certaines difficultés :",
-        "challenges": [
-          "Nos difficultés :",
-          "manque de clarté dans la communication",
-          "ambitions parfois déséquilibrées",
-          "différences de perception sur la vision du projet"
+        "title": "Proposition de valeur",
+        "description": "Pourquoi cette solution mérite d'exister ? Cette solution mérite d'exister car elle permet de proposer des recommandations plus pertinentes et d'améliorer l'expérience client en magasin.",
+        "points": [
+          "MVP",
+          "- Quelle est la fonctionnalité minimale indispensable ?",
+          "- Visualisation rapide des produits associés à un client.",
+          "- Qu'est-ce qu'on peut retirer sans détruire la valeur ?",
+          "- authentification",
+          "- gestion des comptes",
+          "- modification des données",
+          "- Quel est le cœur ?",
+          "Permettre aux personal shoppers d'accéder instantanément à l'historique des produits montrés ou achetés par un client."
         ],
-        "learnings": [
-          "Ce que j'ai appris :",
-          "une définition précise des responsabilités",
-          "un alignement sur les objectifs",
-          "une vision commune du produit final"
-        ],
-        "progress": "Cette étape a renforcé notre capacité d'organisation et notre compréhension du travail en équipe dans un contexte de gestion de projet."
+        "progress": "Quel est le cœur ? Permettre aux personal shoppers d'accéder instantanément à l'historique des produits montrés ou achetés par un client."
       },
       {
         "id": 3,
-        "title": "Design et intégration front-end",
-        "description": "Concernant l'aspect visuel, ma collaboratrice avait une vision plus développée du design global. Je me suis donc positionné comme intégrateur front-end.",
-        "points": [
-          "l'intégration HTML sémantique",
-          "la mise en page CSS",
-          "le positionnement des éléments",
-          "la structuration de l'interface utilisateur"
-        ],
-        "progress": "Cette expérience m'a permis de consolider mes compétences en structuration d'interface et en séparation du fond (structure HTML) et de la forme (style CSS)."
+        "title": "Workflow",
+        "description": "Recherche client → Profil client → Historique produits → Détail produit",
+        "img": "./img/Workflow-CRM.png"
       },
       {
         "id": 4,
-        "title": "Développement et logique applicative",
-        "description": "Nous avons développé ensemble la partie JavaScript en implémentant :",
+        "title": "Définition des features",
         "points": [
-          "la gestion des événements (event listeners)",
-          "la logique métier",
-          "les mécanismes dynamiques de l'application",
-          "l'importation et la manipulation de données via un fichier JSON",
-          "la structuration du code en utilisant une classe pour centraliser les composants",
-          "l'organisation des fonctionnalités (features)"
+          "Gestion des clients",
+          "- rechercher un client : prio ",
+          "- afficher une liste de clients : prio",
+          "- suggérer des clients fréquents "
         ],
-        "progress": "Nous avons eu des divergences sur l'architecture du projet, notamment sur la structuration des fonctionnalités. Ces échanges ont été formateurs, car ils nous ont obligés à justifier nos choix techniques et à améliorer notre capacité d'argumentation. Cette étape marque une progression dans la compréhension de l'architecture logicielle et de la modularité du code."
+        "points1": [
+          "Fiche client",
+          "- afficher les informations du client : prio",
+          "- afficher les marques préférées",
+          "- afficher les catégories préférées",
+          "- afficher un résumé des préférences client"
+        ],
+        "points2": [
+          "Historique client",
+          "- afficher l'historique des achats  : prio",
+          "- afficher l'historique des produits présentés  : prio",
+          "- segmenter l'historique (achats / présentés)  : prio"
+        ],
+        "points3": [
+          "Recherche dans l'historique",
+          "- rechercher un produit dans l'historique : prio",
+          "- filtrer les produits par attribut"
+        ],
+        "points4": [
+          "Information produit",
+          "- afficher une fiche produit détaillée avec un visuel du produit"
+        ],
+        "points5": [
+          "Recommandation",
+          "- suggérer des produits similaires",
+          "- proposer des recommandations personnalisées"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Stack MERN",
+        "description": "L'application repose sur une stack MERN — MongoDB, Express, React et Node.js — qui est aujourd'hui l'une des plus répandues dans le développement web professionnel. Elle garantit une forte cohérence technique entre le serveur et le client, puisque l'ensemble du projet est écrit en JavaScript, ce qui facilite la montée en compétence et la collaboration entre développeurs",
+        "imgM": "./img/MongoDB.svg",
+        "imgE": "./img/Express.svg",
+        "imgR": "./img/icons8-react-native.svg",
+        "imgN": "./img/icons8-nœud-js.svg"
+      },
+      {
+        "id": 6,
+        "title": "Ce que l'application permet concrètement",
+        "points": [
+          "- L'application s'articule autour de trois espaces distincts.",
+          "- Le premier est une page d'accueil qui sert de point d'entrée à l'outil.",
+          "- Le deuxième est un annuaire client, accessible depuis la page 'Profil'. Il affiche l'ensemble des utilisateurs enregistrés, triés alphabétiquement, avec une barre de recherche en temps réel permettant de retrouver instantanément un client par son nom de famille. Chaque fiche client est présentée sous forme de carte visuelle avec photo, nom et prénom.",
+          "- Le troisième espace est le cœur de l'application : la fiche de profil détaillée d'un client. Elle est organisée en deux onglets. Le premier onglet, 'Général', regroupe toutes les informations personnelles du client — date d'inscription, coordonnées, date de naissance, nationalité, ainsi que ses identifiants internes. Le second onglet, 'Historique', est l'outil opérationnel de la fiche : il affiche l'intégralité des sessions d'interaction du client avec la boutique, organisées en trois catégories distinctes — les achats réalisés en magasin, les achats effectués en ligne, et les remboursements demandés. Chaque session est datée et associée aux produits concernés. Une section de sélections complète cet historique en listant les produits que le client a consultés sans jamais passer à l'acte d'achat, une information précieuse pour toute stratégie de recommandation personnalisée.",
+          "- L'application intègre également un catalogue produits complet, accessible depuis la page 'Book', qui permet de naviguer dans l'ensemble des articles disponibles et de les filtrer par marque."
+        ]
       }
     ]
   },

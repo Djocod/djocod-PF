@@ -1,0 +1,15 @@
+.navbar-container {
+  padding: 20px;
+  .navBar-ul {
+    display: flex;
+    justify-content: flex-start;
+    .items-navBar {
+      background: white;
+      padding: 10px;
+      a {
+        color: red;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
   height: 100%;
   background: $black-300;
   padding: 20px;
+  margin: 50px auto;
   border-radius: 8px;
   overflow: hidden;
   z-index: 0;
@@ -84,6 +85,12 @@
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
       }
+      video {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+      }
       .project-text-item {
         height: 100%;
         padding: 10px;
@@ -159,9 +166,11 @@
           visibility: hidden;
           height: 0;
           transition: all 0.5s ease;
+
           .points-container,
           .learn-container,
-          .challenges-container {
+          .challenges-container,
+          .mern-container {
             list-style: none;
             padding: 5px 0px;
             .item-point,
@@ -170,12 +179,18 @@
               color: $beige-100;
               font-size: 0rem;
               letter-spacing: 0.04em;
-              &:first-child {
-                display: inline-block;
-                font-weight: 800;
-                border-bottom: 2px solid $green-400;
-                padding-bottom: 5px;
-              }
+              // &:first-child {
+              //   display: inline-block;
+              //   font-weight: 800;
+              //   border-bottom: 2px solid $green-400;
+              //   padding-bottom: 5px;
+              // }
+            }
+          }
+          .mern-container {
+            img {
+              height: 100%;
+              width: 100%;
             }
           }
         }
@@ -190,23 +205,44 @@
           .task-desc {
             padding-top: 10px;
           }
+          img {
+            height: 100%;
+            width: 100%;
+          }
           .points-container,
           .learn-container,
-          .challenges-container {
+          .challenges-container,
+          .mern-container {
             list-style: none;
-            padding: 5px 0px;
+            // padding: 5px 0px;
+
             .item-point,
             .item-learn,
             .item-challenge {
               color: $black-700;
               font-size: 0.9rem;
               letter-spacing: 0.04em;
-              &:first-child {
-                display: inline-block;
-                font-weight: 800;
-                border-bottom: 2px solid $green-400;
-                padding-bottom: 5px;
-              }
+
+              // &:first-child {
+              //   display: inline-block;
+              //   font-weight: 800;
+              //   border-bottom: 2px solid $green-400;
+              //   padding-bottom: 5px;
+              // }
+            }
+          }
+          .mern-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            img {
+              object-fit: contain;
+              height: 74px;
+              width: 74px;
+              background: $green-100;
+              border-radius: 50px;
+              padding: 10px;
             }
           }
         }

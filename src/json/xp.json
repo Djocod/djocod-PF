@@ -1,13 +1,7 @@
 [
   {
     "id": 0,
-    "skill": [
-      "Organisation",
-      "Autonomie",
-      "Travail d'équipe",
-      "Ecoute active",
-      "Sens du service"
-    ]
+    "skill": ["Organisation", "Autonomie", "Travail d'équipe", "Ecoute active"]
   },
   {
     "id": 1,

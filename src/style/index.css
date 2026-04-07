@@ -36,6 +36,26 @@ body {
   margin: 0 auto;
 }
 
+.navbar-container {
+  padding: 20px;
+}
+.navbar-container .navBar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.navbar-container .navBar-ul .items-navBar {
+  background: white;
+  padding: 10px;
+}
+.navbar-container .navBar-ul .items-navBar a {
+  color: red;
+  text-decoration: none;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -857,6 +877,7 @@ body {
   height: 100%;
   background: rgb(60, 60, 60);
   padding: 20px;
+  margin: 50px auto;
   border-radius: 8px;
   overflow: hidden;
   z-index: 0;
@@ -960,6 +981,12 @@ body {
      object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
+.body-project-hetic .psh-items .psh-container-left video {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
 .body-project-hetic .psh-items .psh-container-left .project-text-item {
   height: 100%;
   padding: 10px;
@@ -1049,7 +1076,8 @@ body {
 }
 .body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .points-container,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .learn-container,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container {
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .mern-container {
   list-style: none;
   padding: 5px 0px;
 }
@@ -1061,24 +1089,17 @@ body {
 .body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .learn-container .item-challenge,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-point,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-learn,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-challenge {
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-challenge,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .mern-container .item-point,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .mern-container .item-learn,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .mern-container .item-challenge {
   color: #f5f0eb;
   font-size: 0rem;
   letter-spacing: 0.04em;
 }
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .points-container .item-point:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .points-container .item-learn:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .points-container .item-challenge:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .learn-container .item-point:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .learn-container .item-learn:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .learn-container .item-challenge:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-point:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-learn:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .challenges-container .item-challenge:first-child {
-  display: inline-block;
-  font-weight: 800;
-  border-bottom: 2px solid #538367;
-  padding-bottom: 5px;
+.body-project-hetic .psh-items .psh-container-right .task-container .task-unOnclick .mern-container img {
+  height: 100%;
+  width: 100%;
 }
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick {
   border-radius: 3px;
@@ -1093,11 +1114,15 @@ body {
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .task-desc {
   padding-top: 10px;
 }
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick img {
+  height: 100%;
+  width: 100%;
+}
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .points-container,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .learn-container,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container {
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .mern-container {
   list-style: none;
-  padding: 5px 0px;
 }
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .points-container .item-point,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .points-container .item-learn,
@@ -1107,24 +1132,33 @@ body {
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .learn-container .item-challenge,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-point,
 .body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-learn,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-challenge {
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-challenge,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .mern-container .item-point,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .mern-container .item-learn,
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .mern-container .item-challenge {
   color: rgb(160, 160, 160);
   font-size: 0.9rem;
   letter-spacing: 0.04em;
 }
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .points-container .item-point:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .points-container .item-learn:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .points-container .item-challenge:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .learn-container .item-point:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .learn-container .item-learn:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .learn-container .item-challenge:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-point:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-learn:first-child,
-.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .challenges-container .item-challenge:first-child {
-  display: inline-block;
-  font-weight: 800;
-  border-bottom: 2px solid #538367;
-  padding-bottom: 5px;
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .mern-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.body-project-hetic .psh-items .psh-container-right .task-container .task-onclick .mern-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 74px;
+  width: 74px;
+  background: #d4e0d9;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 834px) {
