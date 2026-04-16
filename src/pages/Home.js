@@ -4,18 +4,20 @@ import Experience from "../components/Experience";
 import Certification from "../components/Certification";
 import Talk from "../components/Talk";
 import Contact from "../components/Contact";
-import ProjectHetic from "../components/ProjectHetic";
-
+import NavProject from "../components/NavProject";
+import PageTransition from "../components/PageTransition";
 const Home = () => {
   return (
-    <div className="body-home">
-      <Hero />
-      <ProjectHetic />
-      <Experience />
-      <Certification />
-      <Talk />
-      <Contact />
-    </div>
+    <PageTransition>
+      <div className="body-home">
+        <Hero />
+        <NavProject />
+        <Experience />
+        <Certification />
+        <Talk />
+        <Contact />
+      </div>
+    </PageTransition>
   );
 };
 

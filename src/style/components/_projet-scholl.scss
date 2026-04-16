@@ -43,25 +43,12 @@
   .psh-items {
     position: relative;
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+    height: 100%;
     gap: 20px;
-    .psh-container-left,
-    .psh-container-right {
-      margin-top: 20px;
-      border-radius: 10px;
-      background: $black-200;
-      border: 1px solid $black-400;
-      transition:
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-
-      &:hover {
-        border-color: $green-300;
-        box-shadow: 0 0 0 1px $green-300;
-      }
-    }
+    margin-top: 20px;
+    border-radius: 10px;
+    background: $black-200;
+    border: 1px solid $black-400;
 
     h3 {
       letter-spacing: 0.05em;
@@ -78,22 +65,36 @@
       letter-spacing: 0.04em;
     }
     .psh-container-left {
-      width: 40%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
       img {
-        width: 100%;
-        height: 300px;
+        width: 50%;
+        height: 100%;
         object-fit: cover;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
       }
-      video {
-        width: 100%;
-        height: 300px;
-        border-radius: 10px 10px 0px 0px;
-        padding: 20px;
+      .card-video {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        video {
+          height: 500px;
+          border-radius: 10px;
+          padding: 20px;
+        }
       }
       .project-text-item {
-        height: 100%;
+        width: 50%;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h3 {
           font-size: 1.4rem;
         }
@@ -102,28 +103,55 @@
             padding-top: 10px;
           }
         }
-        .project-btn {
-          display: block;
-          margin: 0 20px 0 auto;
-          padding: 10px;
-          border: none;
-          background: none;
-          a {
+        .info-project {
+          width: 100%;
+          padding: 20px 0px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          p {
+            padding: 0px 10px;
+          }
+        }
+        .btn-container {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          .project-btn {
             text-decoration: none;
-            color: $beige-100;
-            border-radius: 3px;
-            transition: all 0.3s ease-in-out;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: $black-300;
+            background: $green-100;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: background 0.3s ease;
+
+            a {
+              text-decoration: none;
+              color: $black-200;
+              border-bottom: 2px solid transparent;
+            }
+
             &:hover {
-              padding: 5px;
-              background: $beige-200;
-              color: $black-300;
+              transition: all 0.3s ease-in-out;
+              background: $green-300;
+              a {
+                color: $beige-100;
+                border-bottom: 2px solid $beige-300;
+              }
             }
           }
         }
       }
     }
     .psh-container-right {
-      width: 60%;
+      width: 100%;
       .task-theme {
         text-align: center;
         font-size: 2rem;
@@ -205,16 +233,17 @@
           .task-desc {
             padding-top: 10px;
           }
-          img {
-            height: 100%;
-            width: 100%;
+          .img-workflow {
+            margin: 0 auto;
+            display: block;
+            width: 400px;
           }
           .points-container,
           .learn-container,
           .challenges-container,
           .mern-container {
             list-style: none;
-            // padding: 5px 0px;
+            padding: 3px 0px;
 
             .item-point,
             .item-learn,
@@ -222,13 +251,15 @@
               color: $black-700;
               font-size: 0.9rem;
               letter-spacing: 0.04em;
-
-              // &:first-child {
-              //   display: inline-block;
-              //   font-weight: 800;
-              //   border-bottom: 2px solid $green-400;
-              //   padding-bottom: 5px;
-              // }
+              padding-bottom: 5px;
+            }
+            .item-work {
+              &:first-child {
+                display: inline-block;
+                font-weight: 800;
+                border-bottom: 2px solid $green-400;
+                padding-bottom: 5px;
+              }
             }
           }
           .mern-container {
@@ -257,7 +288,16 @@
       flex-direction: column;
       .psh-container-left,
       .psh-container-right {
+        img {
+          width: 100%;
+          height: 250px;
+        }
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        .project-text-item {
+          width: 100%;
+        }
       }
     }
   }

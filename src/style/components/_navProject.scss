@@ -1,0 +1,122 @@
+.body-card-nav-project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $black-300;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  .psh-title {
+    z-index: 1;
+    font-size: 2rem;
+    color: $green-100;
+    font-family: $font-SpaceGrotesk;
+    margin-bottom: 20px;
+    .fa-hexagon {
+      color: $green-300;
+      font-size: 1.8rem;
+      animation: rotate 5s linear infinite;
+    }
+  }
+  .container-card-project {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    .body-card-projet {
+      width: 400px;
+      height: 100%;
+      h3 {
+        letter-spacing: 0.05em;
+        color: $green-100;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: 3px solid $green-400;
+        text-align: center;
+      }
+      .card-img,
+      .card-video {
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 250px;
+        }
+        video {
+          width: 100%;
+          height: 250px;
+        }
+      }
+      .header-card {
+        width: 100%;
+        .header-info-project {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          p {
+            font-family: "Inter", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: $black-700;
+            line-height: 1.4;
+            letter-spacing: 0.04em;
+            padding: 0px 10px;
+          }
+        }
+        .header-btn-container {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          .header-project-btn {
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid transparent;
+            background: none;
+            a {
+              text-decoration: none;
+              color: $beige-100;
+              transition: all 0.3s ease-in-out;
+              border-bottom: 2px solid transparent;
+              &:hover {
+                border-bottom: 2px solid $green-300;
+              }
+            }
+          }
+          .view-project {
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: $black-300;
+            background: $green-100;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: background 0.3s ease;
+
+            a {
+              text-decoration: none;
+              color: $black-200;
+              border-bottom: 2px solid transparent;
+            }
+
+            &:hover {
+              transition: all 0.3s ease-in-out;
+              background: $green-300;
+              a {
+                color: $beige-100;
+                border-bottom: 2px solid $beige-300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

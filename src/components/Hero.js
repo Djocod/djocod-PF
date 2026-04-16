@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import xp from "../json/xp.json";
 import icon from "../json/icon.json";
 import FrontMent from "./FrontMent.js";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const nav = useRef(null);
@@ -53,7 +54,7 @@ const Hero = () => {
           <a href="#experience">Parcours pro</a>
         </li>
         <li className="item-nav">
-          <a href="#project-school">Projet Hetic</a>
+          <NavLink to="/Project">Projet</NavLink>
         </li>
         <li className="item-nav">
           <a href="#degree">Certification</a>
@@ -84,7 +85,7 @@ const Hero = () => {
         </div>
         <div className="pseudo-container hero-style">
           <h1>Jordan</h1>
-          <p>Développer Frontend Junior</p>
+          <p>Developper Frontend Junior</p>
           <a className="link-mail" href="mailto:jordan.francoual@hotmail.com">
             Me contacter
             <i className="fa-solid fa-hexagon"></i>
@@ -95,7 +96,7 @@ const Hero = () => {
             <a href="#experience">Parcours pro</a>
           </li>
           <li className="item-direction">
-            <a href="#project-school">Projet Hetic</a>
+            <NavLink to="/Project">Projet</NavLink>
           </li>
           <li className="item-direction">
             <a href="#degree">Certification</a>

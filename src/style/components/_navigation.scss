@@ -1,14 +1,36 @@
-.navbar-container {
-  padding: 20px;
-  .navBar-ul {
-    display: flex;
-    justify-content: flex-start;
-    .items-navBar {
-      background: white;
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: $black-200;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  // transform: translateY(-100%);
+  transition: all 0.4s ease-in-out;
+  .item-nav {
+    margin: 5px;
+    a {
+      display: block;
+      text-decoration: none;
+      font-family: $font-Inter;
+      font-size: 0.6em;
+      text-transform: uppercase;
+      color: $green-200;
+      background: $green-700;
       padding: 10px;
-      a {
-        color: red;
-        text-decoration: none;
+      border-radius: 6px;
+      border-left: 3px solid $green-400;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: $green-600;
+        color: $green-100;
       }
     }
   }
