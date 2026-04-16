@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import projectsSchool from "../json/projectsSchool.json";
 import CardProject from "./CardProject";
 
