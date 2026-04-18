@@ -54,10 +54,9 @@ const Cerification = () => {
         </p>
         <p>
           <strong>Mon objectif </strong>
-          est d'intégrer un Mastère CTO en alternance afin de mettre en pratique
-          mes compétences sur des projets concrets, évoluer dans un
-          environnement stimulant et développer à la fois ma vision technique et
-          stratégique.
+          est d'intégrer un Mastère CTO en afin de faire valoir ces compétences
+          sur des projets concrets, évoluer dans un environnement stimulant et
+          développer à la fois ma vision technique et stratégique.
         </p>
       </div>
     </div>

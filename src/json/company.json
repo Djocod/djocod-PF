@@ -3,24 +3,24 @@
     "id": 1,
     "logo": "./img/leclerc.jpg",
     "nameComp": "Leclerc Drive",
-    "location": "Figeac 46",
+    "location": "Figeac-(46)",
     "time": "2025",
     "workstation": "Préparateur de commande",
     "description": {
       "activity1": "J'ai évolué dans un environnement structuré et orienté performance, utilisant des outils numériques de gestion des flux pour assurer la fiabilité et l'efficacité des opérations. Cette expérience m'a permis de développer des capacités d'organisation, d'optimisation des processus et de contrôle qualité.",
-      "activity2": "Cette expérience m'a permis de renforcer des compétences clés telles que l'analyse de processus, la coordination inter-équipes, la rigueur et l'amélioration continue."
+      "activity2": "Elle m'a également permis de renforcer des compétences clés telles que l'analyse de processus, la coordination inter-équipes, la rigueur et l'amélioration continue."
     }
   },
   {
     "id": 2,
     "logo": "./img/jean-larnaudie.jpg",
     "nameComp": "Jean Larnaudie",
-    "location": "Figeac 46",
+    "location": "Figeac-(46)",
     "time": "2020 - 2024",
     "workstation": "Poste d'opérateur sur ligne / Assistant chef de ligne",
     "description": {
       "activity1": "Dans un environnement industriel, j'ai participé à l'organisation et au suivi des lignes de production dans un cadre où la qualité et le respect des délais étaient essentiels. Cette expérience m'a permis de mieux comprendre le fonctionnement général d'une activité et l'importance d'une bonne organisation pour en assurer l'efficacité.",
-      "activity2": "En coordonnant l'équipe et en gérant les imprévus, j'ai appris à réagir rapidement, à définir les priorités et à maintenir le bon déroulement du travail. Cette expérience m'a permis de développer : sens des responsabilités, esprit d'équipe et capacité d'adaptation."
+      "activity2": "En coordonnant l'équipe et en gérant les imprévus, j'ai appris à réagir rapidement, à définir les priorités et à maintenir le bon déroulement du travail. J'ai pu y développer mon sens des responsabilités, mon esprit d'équipe et ma capacité d'adaptation."
     }
   },
   {

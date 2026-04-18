@@ -38,25 +38,25 @@ const Talk = () => {
           <img src={require("../assets/img/desk-green.jpeg")} alt="computer" />
           <div className="card-vision">
             <p>
-              Mon parcours à été principalement orienté vers le commerce.
+              Mon parcours a été principalement orienté vers le commerce.
               Pendant sept ans, j'ai travaillé comme vendeur, ouvrier, puis
               assistant chef de ligne. Ces expériences m'ont appris à être
               organisé, rigoureux et à travailler en équipe.{" "}
             </p>
             <p>
               {" "}
-              Mais à côté de ça, j'ai toujours eu un vrai intérêt pour
+              Mais à côté de ça, j'ai toujours eu un réel intérêt pour
               l'informatique. En 2023, par curiosité, j'ai commencé à apprendre
               le développement web en autodidacte, au départ juste pour
               comprendre comment fonctionnent les sites, et plus j'apprenais,
-              plus ça me passionnait, j'ai voulu comprendre ce qu'il y avait
+              plus ça me passionnait. J'ai voulu comprendre ce qu'il y avait
               derrière une simple page, l'architecture d'un site, les outils,
               les frameworks… bref, tout le fonctionnement technique.
             </p>
             <p>
               {" "}
-              Petit à petit, c'est devenu évident pour moi que je voulais en
-              faire mon métier. C'est pour ça qu'en octobre 2025, j'ai décidé de
+              Petit à petit, c'est devenu évident pour moi : je voulais en faire
+              mon métier. C'est pour ça qu'en octobre 2025, j'ai décidé de
               reprendre mes études à{" "}
               <a
                 href="https://www.hetic.net/?gge_source=google&gge_medium=cpc&gge_term=hetic&gge_campaign=Search-MarquePure&gad_source=1&gad_campaignid=81530319&gbraid=0AAAAAD8alhHPhrMrZiBT7DqXU5v0GIoRL&gclid=CjwKCAiA1obMBhAbEiwAsUBbIg11PCYeTgyc2QPMgLxl1cXEe_BEK6H7J02raZYttcae6OwmI06abBoCyOUQAvD_BwE"
@@ -100,10 +100,11 @@ const Talk = () => {
             </p>
 
             <p>
-              Une fois ces bases solides, je me suis tourné vers JavaScript.
-              C'est à ce moment-là que j'ai vraiment commencé à entrevoir toutes
-              les possibilités du développement web, ajouter de l'interactivité,
-              du dynamisme et rendre les projets plus vivants.
+              Une fois ces bases solidement acquises, je me suis tourné vers
+              JavaScript. C'est à ce moment-là que j'ai vraiment commencé à
+              entrevoir toutes les possibilités du développement web, à ajouter
+              de l'interactivité, du dynamisme et à rendre les projets plus
+              vivants.
             </p>
           </div>
           <img
@@ -113,9 +114,9 @@ const Talk = () => {
         </div>
       </div>
       <p className="conclusion-vision">
-        Ces projets m'ont servi de terrain d'expérimentation, ils m'ont permis
+        Ces projets m'ont servi de terrain d'expérimentation. Ils m'ont permis
         de pratiquer concrètement, de monter en compétences et de développer une
-        vraie compréhension du développement web, autant sur l'aspect technique
+        vraie compréhension du développement web, tant sur l'aspect technique
         que sur la réflexion autour de la conception.
       </p>
     </section>
