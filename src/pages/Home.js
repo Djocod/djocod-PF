@@ -12,9 +12,9 @@ const Home = () => {
       <div className="body-home">
         <Hero />
         <NavProject />
-        <Experience />
         <Certification />
         <Talk />
+        <Experience />
         <Contact />
       </div>
     </PageTransition>
